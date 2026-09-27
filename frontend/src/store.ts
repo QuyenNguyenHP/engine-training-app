@@ -1,0 +1,4 @@
+import { create } from 'zustand';
+export type Part = {id:string;name:string;system:string;modelObjectName:string;function:string;location:string;maintenance:string;position:[number,number,number];explodeOffset:[number,number,number];shape:string;size:[number,number,number];color:string};
+type State = {selected:string|null;isolated:boolean;exploded:boolean;xray:boolean;hidden:string[];resetKey:number;select:(id:string)=>void;toggle:(key:'isolated'|'exploded'|'xray')=>void;hide:()=>void;reset:()=>void};
+export const useViewer = create<State>((set)=>({selected:null,isolated:false,exploded:false,xray:false,hidden:[],resetKey:0,select:(selected)=>set({selected}),toggle:(key)=>set(s=>({[key]:!s[key]})),hide:()=>set(s=>({hidden:s.selected?[...s.hidden,s.selected]:s.hidden,selected:null,isolated:false})),reset:()=>set(s=>({selected:null,isolated:false,exploded:false,xray:false,hidden:[],resetKey:s.resetKey+1}))}));

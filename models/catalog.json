@@ -1,0 +1,25 @@
+{
+  "active": "cylinder-head",
+  "models": [
+    {
+      "id": "cylinder-head",
+      "name": "Cylinder Head Assembly",
+      "file": "Cylinder Head Assembly/0 Cylinder head Assembly.stl"
+    },
+    {
+      "id": "cylinder-head-cover",
+      "name": "Cylinder Head Cover",
+      "file": "Cylinder Head Assembly/1. Cylinder_head_Cover.stl"
+    },
+    {
+      "id": "cylinder-head-cover-gasket",
+      "name": "Cylinder Head Cover Gasket",
+      "file": "Cylinder Head Cover Gasket/0 Cylinder head cover gasket.stl"
+    },
+    {
+      "id": "cylinder-head-gasket",
+      "name": "Cylinder Head Gasket",
+      "file": "Cylinder Head Gasket/0 Cylinder head gasket.stl"
+    }
+  ]
+}

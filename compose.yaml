@@ -1,0 +1,44 @@
+services:
+  frontend:
+    build: ./frontend
+    ports: ["127.0.0.1:8088:80"]
+    depends_on: [backend]
+  backend:
+    build: ./backend
+    volumes:
+      - ./models:/app/models:ro
+    environment:
+      MODELS_DIR: /app/models
+      DATABASE_URL: postgresql+psycopg://engine:engine@db:5432/engine
+      S3_ENDPOINT: http://storage:9000
+      S3_PUBLIC_ENDPOINT: http://localhost:9000
+      S3_BUCKET: engine-assets
+      AWS_ACCESS_KEY_ID: engine_local
+      AWS_SECRET_ACCESS_KEY: engine_local_password
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: engine
+      POSTGRES_PASSWORD: engine
+      POSTGRES_DB: engine
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U engine"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes: ["postgres-data:/var/lib/postgresql/data"]
+  storage:
+    profiles: [assets]
+    image: quay.io/minio/minio:RELEASE.2025-04-22T22-12-26Z
+    command: server /data --console-address :9001
+    environment:
+      MINIO_ROOT_USER: engine_local
+      MINIO_ROOT_PASSWORD: engine_local_password
+    ports: ["127.0.0.1:9000:9000", "127.0.0.1:9001:9001"]
+    volumes: ["asset-data:/data"]
+volumes:
+  postgres-data:
+  asset-data:
