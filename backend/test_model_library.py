@@ -16,20 +16,20 @@ class LibraryTest(unittest.TestCase):
             files.mkdir()
             (files / "engine.glb").write_bytes(b"fixture")
             (root / "catalog.json").write_text(json.dumps({"active": "engine", "models": [
-                {"id": "engine", "name": "Engine", "file": "engine.glb"}]}))
-            with patch.object(library, "ROOT", root), patch.object(library, "FILES", files):
+                {"id": "engine", "name": "Engine", "file": "files/engine.glb"}]}))
+            with patch.object(library, "ROOT", root):
                 self.assertTrue(library.catalogue()["models"][0]["available"])
-                self.assertEqual(library.active_model()["url"], "/api/v1/model-files/engine.glb")
-                self.assertEqual(library.serve_model("engine.glb").path, files / "engine.glb")
+                self.assertEqual(library.model_by_id()["url"], "/api/v1/model-files/files/engine.glb")
+                self.assertEqual(library.serve_model("files/engine.glb").path, files / "engine.glb")
                 for invalid in ("../secret.glb", "/etc/passwd", "secret.env"):
                     with self.assertRaises(HTTPException):
                         library.resolve_file(invalid)
-                (files / "outside.glb").symlink_to(root / "outside.glb")
+                (files / "outside.glb").symlink_to("/tmp/outside.glb")
                 with self.assertRaises(HTTPException):
-                    library.resolve_file("outside.glb")
+                    library.resolve_file("files/outside.glb")
                 (files / "engine.glb").unlink()
                 with self.assertRaises(HTTPException) as missing:
-                    library.active_model()
+                    library.model_by_id()
                 self.assertEqual(missing.exception.status_code, 404)
 
 

@@ -5,7 +5,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
 from sqlalchemy import JSON, String, create_engine, select
 from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column
-from app.model_library import active_model, router as model_router
+from app.model_library import components_for_model, model_by_id, router as model_router
 
 
 class Base(DeclarativeBase):
@@ -61,14 +61,17 @@ def health():
 
 
 @app.get("/api/v1/components")
-def components():
+def components(model_id: str | None = None):
+    model_components = components_for_model(model_id)
+    if model_components is not None:
+        return model_components
     with Session(engine) as session:
         return list(session.scalars(select(Component.data).order_by(Component.id)))
 
 
 @app.get("/api/v1/assets/engine-model")
-def model_asset():
-    local_model = active_model()
+def model_asset(model_id: str | None = None):
+    local_model = model_by_id(model_id)
     if local_model:
         return local_model
     key = os.getenv("ENGINE_MODEL_KEY")

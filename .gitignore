@@ -5,5 +5,4 @@ __pycache__/
 *.pyc
 .env
 *.db
-models/files/**
-!models/files/.gitkeep
+models/library/**/model.glb

@@ -1,25 +1,35 @@
 {
-  "active": "cylinder-head",
+  "active": "rotating-system",
   "models": [
     {
+      "id": "rotating-system",
+      "name": "Rotating System",
+      "file": "library/rotating-system/model.glb",
+      "components": "library/rotating-system/components.json",
+      "camera": {
+        "position": [1.6969, 0.3466, 7],
+        "target": [1.6969, 0.3466, 0.0000]
+      }
+    },
+    {
       "id": "cylinder-head",
-      "name": "Cylinder Head Assembly",
-      "file": "Cylinder Head Assembly/0 Cylinder head Assembly.stl"
+      "name": "Cylinder Head",
+      "file": "library/cylinder-head/model.glb",
+      "components": "library/cylinder-head/components.json",
+      "camera": {
+        "position": [0.0354, 1.4443, 3],
+        "target": [0.0354, 1.4443, -0.1005]
+      }
     },
     {
-      "id": "cylinder-head-cover",
-      "name": "Cylinder Head Cover",
-      "file": "Cylinder Head Assembly/1. Cylinder_head_Cover.stl"
-    },
-    {
-      "id": "cylinder-head-cover-gasket",
-      "name": "Cylinder Head Cover Gasket",
-      "file": "Cylinder Head Cover Gasket/0 Cylinder head cover gasket.stl"
-    },
-    {
-      "id": "cylinder-head-gasket",
-      "name": "Cylinder Head Gasket",
-      "file": "Cylinder Head Gasket/0 Cylinder head gasket.stl"
+      "id": "generator-common-bed",
+      "name": "Generator and Common Bed",
+      "file": "library/generator-common-bed/model.glb",
+      "components": "library/generator-common-bed/components.json",
+      "camera": {
+        "position": [0.0635, 0.1235, 10.5],
+        "target": [0.0635, 0.1235, -0.0075]
+      }
     }
   ]
 }
