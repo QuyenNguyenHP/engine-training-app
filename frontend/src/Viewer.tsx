@@ -43,7 +43,7 @@ function Schematic({parts}:{parts:Part[]}) {
   return <group>{parts.filter(p=>!s.hidden.includes(p.id)&&(!s.isolated||!s.selected||s.selected===p.id)).map(p=>{
     const active=s.selected===p.id;
     const transparent=s.xray&&!active;
-    const position=p.position.map((v,i)=>v+(s.exploded?p.explodeOffset[i]:0)) as [number,number,number];
+    const position=p.position.map((v,i)=>v+(p.explodeOffset[i]*s.explodeAmount)) as [number,number,number];
     return <mesh key={p.id} position={position} rotation={p.shape==='shaft'?[Math.PI/2,0,0]:[0,0,0]} onClick={e=>{e.stopPropagation();s.select(p.id)}}>
       {p.shape==='box'?<boxGeometry args={p.size}/>:<cylinderGeometry args={[...p.size,32]}/>}
       <meshStandardMaterial color={active?'#56e5cf':p.color} metalness={0.45} roughness={0.35} transparent={transparent} opacity={transparent?0.15:1} depthWrite={!transparent}/>
@@ -76,10 +76,10 @@ function Imported({url,parts,controlsRef}:{url:string;parts:Part[];controlsRef:R
     copy.traverse(o=>originals.set(o,o.position.clone()));
     applyVisibility();
     for(const p of parts){const o=copy.getObjectByName(p.modelObjectName);if(!o)continue;
-      if(s.exploded)o.position.add(new THREE.Vector3(...p.explodeOffset));
+      if(s.explodeAmount)o.position.add(new THREE.Vector3(...p.explodeOffset).multiplyScalar(s.explodeAmount));
     }
     return ()=>{originals.forEach((v,o)=>o.position.copy(v))};
-  },[copy,parts,s.selected,s.isolated,s.hidden,s.exploded,s.xray]);
+  },[copy,parts,s.selected,s.isolated,s.hidden,s.explodeAmount,s.xray]);
   useEffect(()=>{
     if(!s.isolated||!s.selected||!controlsRef.current)return;
     const component=parts.find(part=>part.id===s.selected);
