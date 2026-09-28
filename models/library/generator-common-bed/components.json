@@ -2,7 +2,6 @@
   {
     "id": "common-bed",
     "name": "Common bed",
-    "system": "Foundation",
     "modelObjectName": "CommonBed",
     "function": "Provides the common mounting base for the generator set.",
     "location": "Base frame",
@@ -16,7 +15,6 @@
   {
     "id": "cover-flywheel",
     "name": "Flywheel cover",
-    "system": "Protection",
     "modelObjectName": "CoverFlywheel",
     "function": "Guards the flywheel area.",
     "location": "Flywheel end",
@@ -30,7 +28,6 @@
   {
     "id": "generator",
     "name": "Generator",
-    "system": "Electrical",
     "modelObjectName": "Generator",
     "function": "Converts mechanical rotation into electrical energy.",
     "location": "Generator end of set",
@@ -44,7 +41,6 @@
   {
     "id": "level-switch",
     "name": "Level switch",
-    "system": "Monitoring",
     "modelObjectName": "LevelSwitch",
     "function": "Monitors a fluid level and provides a status signal.",
     "location": "Mounted on associated tank or system",
@@ -58,7 +54,6 @@
   {
     "id": "lo-priming-pump",
     "name": "LO priming pump",
-    "system": "Lubrication",
     "modelObjectName": "LOPrimmingPump",
     "function": "Supplies lubricating oil before or during engine operation.",
     "location": "Lubrication system",
@@ -72,7 +67,6 @@
   {
     "id": "turning-device",
     "name": "Turning device",
-    "system": "Maintenance",
     "modelObjectName": "TurningDevice",
     "function": "Rotates the engine slowly for maintenance and preparation.",
     "location": "Flywheel end",

@@ -72,7 +72,7 @@ def components_for_model(model_id: str | None = None):
         if not isinstance(components, list):
             raise ValueError()
         for component in components:
-            if not isinstance(component, dict) or not all(isinstance(component.get(key), str) and component[key] for key in ("id", "name", "system", "modelObjectName")):
+            if not isinstance(component, dict) or not all(isinstance(component.get(key), str) and component[key] for key in ("id", "name", "modelObjectName")):
                 raise ValueError()
         return components
     except (OSError, ValueError, json.JSONDecodeError) as exc:

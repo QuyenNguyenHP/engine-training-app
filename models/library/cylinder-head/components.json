@@ -2,7 +2,6 @@
   {
     "id": "cylinder-head-cover",
     "name": "Cylinder head cover",
-    "system": "Cylinder head",
     "modelObjectName": "CylinderHeadCover",
     "function": "Encloses and protects the upper valve gear.",
     "location": "Top of cylinder head",
@@ -16,7 +15,6 @@
   {
     "id": "cylinder-head-hfo",
     "name": "Cylinder head HFO",
-    "system": "Cylinder head",
     "modelObjectName": "CylinderHeadHFO",
     "function": "Forms the cylinder head structure for heavy-fuel operation.",
     "location": "Above cylinder liner",
@@ -30,7 +28,6 @@
   {
     "id": "cylinder-liner",
     "name": "Cylinder liner",
-    "system": "Cylinder unit",
     "modelObjectName": "CylinderLiner",
     "function": "Provides the running surface for the piston.",
     "location": "Inside cylinder block",
@@ -44,7 +41,6 @@
   {
     "id": "in-ex-tappet",
     "name": "Inlet and exhaust tappet",
-    "system": "Valve timing",
     "modelObjectName": "In&ExTappet",
     "function": "Transfers cam motion to the valve train.",
     "location": "Valve gear",
@@ -58,7 +54,6 @@
   {
     "id": "indicator-valve",
     "name": "Indicator valve",
-    "system": "Cylinder head",
     "modelObjectName": "IndicatorValve",
     "function": "Provides a connection for cylinder pressure indication.",
     "location": "Cylinder head",
@@ -72,7 +67,6 @@
   {
     "id": "intake-exhaust-valve",
     "name": "Intake and exhaust valve",
-    "system": "Valve timing",
     "modelObjectName": "IntakeExhaustValve",
     "function": "Controls gas flow into and out of the cylinder.",
     "location": "Cylinder head",
@@ -86,7 +80,6 @@
   {
     "id": "valve-rocker-arm",
     "name": "Valve rocker arm",
-    "system": "Valve timing",
     "modelObjectName": "ValveRockerArm",
     "function": "Transfers valve-gear motion to the valve stem.",
     "location": "Cylinder head",

@@ -2,7 +2,6 @@
   {
     "id": "aux-driving-gear",
     "name": "Auxiliary driving gear",
-    "system": "Gear train",
     "modelObjectName": "AuxMachineDrivingGear",
     "function": "Drives auxiliary machinery through the gear train.",
     "location": "Auxiliary drive end",
@@ -16,7 +15,6 @@
   {
     "id": "balance-weight",
     "name": "Balance weight",
-    "system": "Rotating system",
     "modelObjectName": "BlanceWeight",
     "function": "Balances rotating masses to reduce vibration.",
     "location": "Crankshaft assembly",
@@ -30,7 +28,6 @@
   {
     "id": "cam-shaft",
     "name": "Cam shaft",
-    "system": "Valve timing",
     "modelObjectName": "CamShaft",
     "function": "Controls valve timing through cam profiles.",
     "location": "Timing assembly",
@@ -44,7 +41,6 @@
   {
     "id": "cam-shaft-bearing",
     "name": "Cam shaft bearing",
-    "system": "Valve timing",
     "modelObjectName": "CamShaftBearing",
     "function": "Supports the cam shaft and permits rotation.",
     "location": "Cam shaft housing",
@@ -58,7 +54,6 @@
   {
     "id": "connecting-rod-1",
     "name": "Connecting rod 1",
-    "system": "Rotating system",
     "modelObjectName": "Con1",
     "function": "Transfers piston motion to the crankshaft.",
     "location": "Cylinder 1, between piston and crankshaft",
@@ -72,7 +67,6 @@
   {
     "id": "connecting-rod-2",
     "name": "Connecting rod 2",
-    "system": "Rotating system",
     "modelObjectName": "Con2",
     "function": "Transfers piston motion to the crankshaft.",
     "location": "Cylinder 2, between piston and crankshaft",
@@ -86,7 +80,6 @@
   {
     "id": "connecting-rod-3",
     "name": "Connecting rod 3",
-    "system": "Rotating system",
     "modelObjectName": "Con3",
     "function": "Transfers piston motion to the crankshaft.",
     "location": "Cylinder 3, between piston and crankshaft",
@@ -100,7 +93,6 @@
   {
     "id": "connecting-rod-4",
     "name": "Connecting rod 4",
-    "system": "Rotating system",
     "modelObjectName": "Con4",
     "function": "Transfers piston motion to the crankshaft.",
     "location": "Cylinder 4, between piston and crankshaft",
@@ -114,7 +106,6 @@
   {
     "id": "connecting-rod-5",
     "name": "Connecting rod 5",
-    "system": "Rotating system",
     "modelObjectName": "Con5",
     "function": "Transfers piston motion to the crankshaft.",
     "location": "Cylinder 5, between piston and crankshaft",
@@ -128,7 +119,6 @@
   {
     "id": "connecting-rod-6",
     "name": "Connecting rod 6",
-    "system": "Rotating system",
     "modelObjectName": "Con6",
     "function": "Transfers piston motion to the crankshaft.",
     "location": "Cylinder 6, between piston and crankshaft",
@@ -142,7 +132,6 @@
   {
     "id": "connecting-rod-7",
     "name": "Connecting rod 7",
-    "system": "Rotating system",
     "modelObjectName": "Con7",
     "function": "Transfers piston motion to the crankshaft.",
     "location": "Cylinder 7, between piston and crankshaft",
@@ -156,7 +145,6 @@
   {
     "id": "connecting-rod-8",
     "name": "Connecting rod 8",
-    "system": "Rotating system",
     "modelObjectName": "Con8",
     "function": "Transfers piston motion to the crankshaft.",
     "location": "Cylinder 8, between piston and crankshaft",
@@ -170,7 +158,6 @@
   {
     "id": "crank-shaft",
     "name": "Crank shaft",
-    "system": "Rotating system",
     "modelObjectName": "CrankShaft",
     "function": "Converts piston motion into rotary motion.",
     "location": "Main rotating assembly",
@@ -184,7 +171,6 @@
   {
     "id": "flexible-coupling",
     "name": "Flexible coupling",
-    "system": "Power transmission",
     "modelObjectName": "FlexibleCoupling",
     "function": "Transmits torque while absorbing limited misalignment.",
     "location": "Drive end",
@@ -198,7 +184,6 @@
   {
     "id": "front-end-damper",
     "name": "Front end damper",
-    "system": "Rotating system",
     "modelObjectName": "FrontEndDamper",
     "function": "Damps torsional vibration in the rotating assembly.",
     "location": "Front end of crankshaft",
@@ -212,7 +197,6 @@
   {
     "id": "idle-gear",
     "name": "Idle gear",
-    "system": "Gear train",
     "modelObjectName": "IdleGear",
     "function": "Transfers rotation between driving and driven gears.",
     "location": "Gear train",
@@ -226,7 +210,6 @@
   {
     "id": "main-bearing",
     "name": "Main bearing",
-    "system": "Rotating system",
     "modelObjectName": "MainBearing",
     "function": "Supports the crankshaft main journals.",
     "location": "Crankcase",
@@ -240,7 +223,6 @@
   {
     "id": "piston-1",
     "name": "Piston 1",
-    "system": "Rotating system",
     "modelObjectName": "piston1",
     "function": "Transfers combustion pressure to the connecting rod.",
     "location": "Cylinder 1",
@@ -254,7 +236,6 @@
   {
     "id": "piston-2",
     "name": "Piston 2",
-    "system": "Rotating system",
     "modelObjectName": "piston2",
     "function": "Transfers combustion pressure to the connecting rod.",
     "location": "Cylinder 2",
@@ -268,7 +249,6 @@
   {
     "id": "piston-3",
     "name": "Piston 3",
-    "system": "Rotating system",
     "modelObjectName": "piston3",
     "function": "Transfers combustion pressure to the connecting rod.",
     "location": "Cylinder 3",
@@ -282,7 +262,6 @@
   {
     "id": "piston-4",
     "name": "Piston 4",
-    "system": "Rotating system",
     "modelObjectName": "piston4",
     "function": "Transfers combustion pressure to the connecting rod.",
     "location": "Cylinder 4",
@@ -296,7 +275,6 @@
   {
     "id": "piston-5",
     "name": "Piston 5",
-    "system": "Rotating system",
     "modelObjectName": "piston5",
     "function": "Transfers combustion pressure to the connecting rod.",
     "location": "Cylinder 5",
@@ -310,7 +288,6 @@
   {
     "id": "piston-6",
     "name": "Piston 6",
-    "system": "Rotating system",
     "modelObjectName": "piston6",
     "function": "Transfers combustion pressure to the connecting rod.",
     "location": "Cylinder 6",
@@ -324,7 +301,6 @@
   {
     "id": "piston-7",
     "name": "Piston 7",
-    "system": "Rotating system",
     "modelObjectName": "piston7",
     "function": "Transfers combustion pressure to the connecting rod.",
     "location": "Cylinder 7",
@@ -338,7 +314,6 @@
   {
     "id": "piston-8",
     "name": "Piston 8",
-    "system": "Rotating system",
     "modelObjectName": "piston8",
     "function": "Transfers combustion pressure to the connecting rod.",
     "location": "Cylinder 8",
