@@ -6,6 +6,7 @@ import * as THREE from 'three';
 import { Part, useViewer } from './store';
 
 type CameraPreset = { position: [number, number, number]; target: [number, number, number] };
+const SELECTED_COLOR = '#0b3d91';
 
 function CameraPresetController({preset,controlsRef}:{preset:CameraPreset|null;controlsRef:React.RefObject<any>}) {
   const camera=useThree((state)=>state.camera);
@@ -34,7 +35,7 @@ function STLModel({url,part}:{url:string;part:Part}) {
   useEffect(()=>()=>geometry.dispose(),[geometry]);
   const s=useViewer();
   return <mesh geometry={geometry} visible={!s.hidden.includes(part.id)} onClick={e=>{e.stopPropagation();s.select(part.id)}}>
-    <meshStandardMaterial color={s.selected===part.id?'#56e5cf':'#9aaebf'} metalness={0.35} roughness={0.45} transparent={s.xray} opacity={s.xray?0.25:1} depthWrite={!s.xray}/>
+    <meshStandardMaterial color={s.selected===part.id?SELECTED_COLOR:'#1d1ac0'} metalness={0.35} roughness={0.45} transparent={s.xray} opacity={s.xray?0.25:1} depthWrite={!s.xray}/>
   </mesh>;
 }
 
@@ -46,7 +47,7 @@ function Schematic({parts}:{parts:Part[]}) {
     const position=p.position.map((v,i)=>v+(p.explodeOffset[i]*s.explodeAmount)) as [number,number,number];
     return <mesh key={p.id} position={position} rotation={p.shape==='shaft'?[Math.PI/2,0,0]:[0,0,0]} onClick={e=>{e.stopPropagation();s.select(p.id)}}>
       {p.shape==='box'?<boxGeometry args={p.size}/>:<cylinderGeometry args={[...p.size,32]}/>}
-      <meshStandardMaterial color={active?'#56e5cf':p.color} metalness={0.45} roughness={0.35} transparent={transparent} opacity={transparent?0.15:1} depthWrite={!transparent}/>
+      <meshStandardMaterial color={active?SELECTED_COLOR:p.color} metalness={0.45} roughness={0.35} transparent={transparent} opacity={transparent?0.15:1} depthWrite={!transparent}/>
     </mesh>;
   })}</group>;
 }
@@ -62,7 +63,7 @@ function Imported({url,parts,controlsRef}:{url:string;parts:Part[];controlsRef:R
       if(!part)return;
       const visible=!s.hidden.includes(part.id)&&(!s.isolated||!s.selected||part.id===s.selected);
       object.visible=visible;
-      if(object instanceof THREE.Mesh){for(const material of (Array.isArray(object.material)?object.material:[object.material])){if(material instanceof THREE.MeshStandardMaterial){material.emissive.set(part.id===s.selected?'#176656':'#000000');material.transparent=s.xray&&part.id!==s.selected;material.opacity=material.transparent?0.15:1;material.depthWrite=!material.transparent}}}
+      if(object instanceof THREE.Mesh){for(const material of (Array.isArray(object.material)?object.material:[object.material])){if(material instanceof THREE.MeshStandardMaterial){material.emissive.set(part.id===s.selected?SELECTED_COLOR:'#000000');material.transparent=s.xray&&part.id!==s.selected;material.opacity=material.transparent?0.15:1;material.depthWrite=!material.transparent}}}
     });
   };
   const ownerFor=(object:THREE.Object3D)=>{

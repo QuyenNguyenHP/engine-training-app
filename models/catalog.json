@@ -4,7 +4,7 @@
     {
       "id": "rotating-system",
       "name": "Rotating System",
-      "file": "library/rotating-system/model.glb",
+      "file": "library/rotating-system/RotatingSystem.glb",
       "components": "library/rotating-system/components.json",
       "camera": {
         "position": [1.6969, 0.3466, 7],
@@ -14,7 +14,7 @@
     {
       "id": "cylinder-head",
       "name": "Cylinder Head",
-      "file": "library/cylinder-head/model.glb",
+      "file": "library/cylinder-head/CylinderHead.glb",
       "components": "library/cylinder-head/components.json",
       "camera": {
         "position": [0.0354, 1.4443, 3],
@@ -24,11 +24,21 @@
     {
       "id": "generator-common-bed",
       "name": "Generator and Common Bed",
-      "file": "library/generator-common-bed/model.glb",
+      "file": "library/generator-common-bed/Generator&CommonBed.glb",
       "components": "library/generator-common-bed/components.json",
       "camera": {
         "position": [0.0635, 0.1235, 10.5],
         "target": [0.0635, 0.1235, -0.0075]
+      }
+    },
+    {
+      "id": "engine-overview",
+      "name": "Engine Overview",
+      "file": "library/engine-overview/EngineOverview.glb",
+      "components": "library/engine-overview/components.json",
+      "camera": {
+        "position": [0.3634, 0.625, 14],
+        "target": [0.3634, 0.625, 0.1313]
       }
     }
   ]

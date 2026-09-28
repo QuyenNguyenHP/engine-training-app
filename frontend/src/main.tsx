@@ -17,6 +17,7 @@ function App() {
   const [cameraPreset, setCameraPreset] = useState<CameraPreset | null>(null);
   const [error, setError] = useState('');
   const [query, setQuery] = useState('');
+  const [collapsedSystems, setCollapsedSystems] = useState<Set<string>>(() => new Set());
   const [isFullscreen, setIsFullscreen] = useState(false);
   const viewportRef = useRef<HTMLDivElement>(null);
   const s = useViewer();
@@ -36,6 +37,7 @@ function App() {
   useEffect(() => {
     if (!modelId) return;
     s.reset();
+    setCollapsedSystems(new Set());
     const suffix = `?model_id=${encodeURIComponent(modelId)}`;
     Promise.all(['/api/v1/components', '/api/v1/assets/engine-model'].map(async (path) => {
       const response = await fetch(path + suffix);
@@ -77,6 +79,15 @@ function App() {
     if (document.fullscreenElement) await document.exitFullscreen();
     else await viewportRef.current?.requestFullscreen();
   };
+  const toggleSystem = (system: string) => {
+    setCollapsedSystems((current) => {
+      const next = new Set(current);
+      if (next.has(system)) next.delete(system);
+      else next.add(system);
+      return next;
+    });
+  };
+  const systems = [...new Set(parts.map((part) => part.system))];
 
   return <>
     <header><div className="brand">◈ <span>ENGINE<span className="accent">LAB</span></span><small>INTERACTIVE TRAINING</small></div><span className="badge">EXPLORE MODE</span></header>
@@ -84,8 +95,13 @@ function App() {
       <label className="model-picker">MODEL<select aria-label="Select model" value={modelId} onChange={(event) => setModelId(event.target.value)}>{models.map((model) => <option key={model.id} value={model.id} disabled={!model.available}>{model.name}{model.available ? '' : ' (missing file)'}</option>)}</select></label>
     </div>
     {error ? <div role="alert" className="error">{error}<button onClick={() => location.reload()}>Retry</button></div> : <main>
-      <aside><p className="eyebrow">COMPONENT LIBRARY <span>{parts.length}</span></p><input aria-label="Search components" placeholder="Search components…" value={query} onChange={(event) => setQuery(event.target.value)} />
-        {[...new Set(parts.map((part) => part.system))].map((system) => <section key={system}><h3>{system}</h3>{parts.filter((part) => part.system === system && part.name.toLowerCase().includes(query.toLowerCase())).map((part) => <button className={'part ' + (part.id === s.selected ? 'active' : '')} key={part.id} onClick={() => selectPart(part)}><span className="dot" style={{ background: part.color }} />{part.name}<span className="arrow">{s.hidden.includes(part.id) ? 'hidden' : '↗'}</span></button>)}</section>)}
+      <aside className="component-library"><p className="eyebrow">COMPONENT LIBRARY <span>{parts.length}</span></p><input aria-label="Search components" placeholder="Search components…" value={query} onChange={(event) => setQuery(event.target.value)} />
+        {systems.map((system) => {
+          const systemParts = parts.filter((part) => part.system === system && part.name.toLowerCase().includes(query.toLowerCase()));
+          const collapsed = collapsedSystems.has(system);
+          const panelId = `system-${system.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+          return <section className="system-group" key={system}><h3><button className="system-toggle" type="button" aria-expanded={!collapsed} aria-controls={panelId} onClick={() => toggleSystem(system)}><span>{system}</span><span className="system-count">{systemParts.length}</span><span className={'system-chevron ' + (collapsed ? '' : 'expanded')}>⌄</span></button></h3><div id={panelId} hidden={collapsed}>{systemParts.map((part) => <button className={'part ' + (part.id === s.selected ? 'active' : '')} key={part.id} onClick={() => selectPart(part)}><span className="dot" style={{ background: part.color }} />{part.name}<span className="arrow">{s.hidden.includes(part.id) ? 'hidden' : '↗'}</span></button>)}</div></section>;
+        })}
         {hiddenParts.length > 0 && <section className="hidden-list"><h3>HIDDEN COMPONENTS</h3>{hiddenParts.map((part) => <button className="part" key={part.id} onClick={() => selectPart(part)}><span className="dot" style={{ background: part.color }} />{part.name}<span className="arrow">Show</span></button>)}</section>}
       </aside>
       <div className="viewport" ref={viewportRef}><div className="view-label"><span className="live" /> {s.exploded ? 'EXPLODED ASSEMBLY' : (modelName || 'ENGINE ASSEMBLY')}</div><button className="fullscreen-toggle" onClick={toggleFullscreen}>{isFullscreen ? 'Exit full screen' : 'Full screen'}</button><div className="canvas-shell">{parts.length ? <Viewer parts={parts} url={url} mode={mode} isFullscreen={isFullscreen} cameraPreset={cameraPreset} /> : <p className="loading">Loading components…</p>}</div>{isFullscreen && selected && <article className="fullscreen-info" onClick={(event) => event.stopPropagation()}><button className="popup-close" aria-label="Close component information" onClick={() => s.select(null)}>×</button><p className="eyebrow">{selected.system}</p><h2>{selected.name}</h2><h3>Function</h3><p>{selected.function}</p><h3>Location</h3><p>{selected.location}</p></article>}<div className="view-help">Drag to rotate · Scroll to zoom · Right-drag to pan</div></div>
