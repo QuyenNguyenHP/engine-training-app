@@ -1,6 +1,16 @@
 {
-  "active": "engine-overview",
+  "active": "lubricating-oil-system",
   "models": [
+    {
+      "id": "lubricating-oil-system",
+      "name": "Lubricating Oil System",
+      "file": "library/lubricating-oil-system/LubricatingOilSystem.glb",
+      "components": "library/lubricating-oil-system/components.json",
+      "camera": {
+        "position": [3.3623, 0.309, 6],
+        "target": [3.3623, 0.309, 0.3945]
+      }
+    },
     {
       "id": "engine-overview",
       "name": "Engine Overview",
