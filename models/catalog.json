@@ -2,16 +2,6 @@
   "active": "lubricating-oil-system",
   "models": [
     {
-      "id": "lubricating-oil-system",
-      "name": "Lubricating Oil System",
-      "file": "library/lubricating-oil-system/LubricatingOilSystem.glb",
-      "components": "library/lubricating-oil-system/components.json",
-      "camera": {
-        "position": [3.3623, 0.309, 6],
-        "target": [3.3623, 0.309, 0.3945]
-      }
-    },
-    {
       "id": "engine-overview",
       "name": "Engine Overview",
       "file": "library/engine-overview/EngineOverview.glb",
@@ -19,6 +9,26 @@
       "camera": {
         "position": [0.3634, 0.625, 14],
         "target": [0.3634, 0.625, 0.1313]
+      }
+    },
+    {
+      "id": "turbo-charger",
+      "name": "Turbocharger",
+      "file": "library/turbo-charger/TurboCharger.glb",
+      "components": "library/turbo-charger/components.json",
+      "camera": {
+        "position": [4.9019, 2.0284, 4],
+        "target": [4.9019, 2.0284, 0.366]
+      }
+    },
+    {
+      "id": "lubricating-oil-system",
+      "name": "Lubricating Oil System",
+      "file": "library/lubricating-oil-system/LubricatingOilSystem.glb",
+      "components": "library/lubricating-oil-system/components.json",
+      "camera": {
+        "position": [3.3623, 0.309, 6],
+        "target": [3.3623, 0.309, 0.3945]
       }
     },
     {

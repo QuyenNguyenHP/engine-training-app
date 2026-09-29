@@ -1,0 +1,72 @@
+[
+  {
+    "id": "bearing-casing",
+    "name": "Bearing casing",
+    "system": "Turbocharger",
+    "modelObjectName": "BearingCasing",
+    "function": "Houses and supports the turbocharger shaft bearings while providing passages for lubrication and cooling.",
+    "location": "Between the compressor and turbine casings",
+    "maintenance": "Check bearing clearances, oil supply and drain passages, seals, temperature and signs of vibration or leakage.",
+    "position": [0, 0, 0],
+    "explodeOffset": [0, 0.7, 0],
+    "shape": "",
+    "size": [1, 1, 1],
+    "color": "#809aa4"
+  },
+  {
+    "id": "compressor-casing",
+    "name": "Compressor casing",
+    "system": "Turbocharger",
+    "modelObjectName": "CompressorCasing",
+    "function": "Collects and directs compressed intake air from the compressor wheel toward the engine charge-air system.",
+    "location": "Air side of the turbocharger around the compressor wheel",
+    "maintenance": "Inspect the casing and diffuser for fouling, erosion, rubbing marks, cracks and loose connections.",
+    "position": [0, 0, 0],
+    "explodeOffset": [0, 0, -0.8],
+    "shape": "",
+    "size": [1, 1, 1],
+    "color": "#6f9fc1"
+  },
+  {
+    "id": "cover",
+    "name": "Turbocharger cover",
+    "system": "Turbocharger",
+    "modelObjectName": "Cover",
+    "function": "Encloses and protects the turbocharger assembly while providing access for inspection and servicing.",
+    "location": "Outer end of the turbocharger casing assembly",
+    "maintenance": "Inspect the cover, fasteners, sealing faces and gasket for damage, looseness or leakage.",
+    "position": [0, 0, 0],
+    "explodeOffset": [-0.8, 0, 0.4],
+    "shape": "",
+    "size": [1, 1, 1],
+    "color": "#889bab"
+  },
+  {
+    "id": "silencer",
+    "name": "Air intake silencer",
+    "system": "Turbocharger",
+    "modelObjectName": "Silencer",
+    "function": "Reduces compressor intake noise and helps guide clean air into the turbocharger inlet.",
+    "location": "At the compressor air inlet",
+    "maintenance": "Clean the intake passages and filter elements; inspect the housing and connections for restriction or damage.",
+    "position": [0, 0, 0],
+    "explodeOffset": [0, 0, -1],
+    "shape": "",
+    "size": [1, 1, 1],
+    "color": "#68a89e"
+  },
+  {
+    "id": "turbine-casing",
+    "name": "Turbine casing",
+    "system": "Turbocharger",
+    "modelObjectName": "TurbinCasing",
+    "function": "Directs engine exhaust gas through the turbine wheel to drive the turbocharger shaft and compressor.",
+    "location": "Exhaust-gas side of the turbocharger around the turbine wheel",
+    "maintenance": "Inspect for carbon deposits, erosion, cracks, gas leakage, rubbing marks and damaged mounting connections.",
+    "position": [0, 0, 0],
+    "explodeOffset": [0.8, 0, 0.5],
+    "shape": "",
+    "size": [1, 1, 1],
+    "color": "#b69252"
+  }
+]
