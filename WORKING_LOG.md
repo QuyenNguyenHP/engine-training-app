@@ -2,6 +2,43 @@
 
 This file records notable development work, decisions, validation and follow-up items by date. Add new entries above older entries.
 
+## 2026-10-11
+
+### Model information
+
+- Replaced the generic `Explore the engine` empty state with model-specific information in the right-side panel.
+- Added an `overview` field to every model entry in `models/catalog.json` so introductory content can be maintained without changing the frontend.
+- Added a fallback introduction and a prompt directing learners to select a component for more detail.
+- Updated backend catalogue validation to accept and validate the optional model overview.
+
+### Component learning content
+
+- Replaced the legacy `function`, `location` and `maintenance` fields with `overview`, `mainFunctions` and `workingPrinciple` learning content.
+- Populated the 10 Engine Overview components from `marine_engine_components.md`.
+- Populated Turbocharger, Lubricating Oil System, Cylinder Head, Generator and Common Bed, and the first 15 Rotating System components from `Marine_Engine_Components_Supplement.md`.
+- Added the remaining Rotating System content for Idle gear, Main bearing and Piston 1-8 from `Marine_Engine_Components_Supplement (1).md`.
+- Completed the schema migration for all 60 components across the six model manifests.
+- Preserved component IDs, GLB object mappings, colors, positions and explode offsets while replacing the learning-content fields.
+
+### Component information interface
+
+- Updated the Component Details panel and fullscreen information popup to render Overview, Main Functions and Working Principle.
+- Displayed Main Functions as a readable bullet list.
+- Added distinct colors and icons for the three learning-section headings.
+- Kept compatibility with the legacy content fields during the migration.
+- Refactored `ComponentDetails.tsx` into smaller `ModelOverview`, `DetailSection` and `MainFunctions` components for easier maintenance.
+- Reformatted `style.css` from compressed single-line rules into readable multi-line CSS.
+- Documented that the right-side panel width is controlled by the final column in the main grid's `grid-template-columns` declaration.
+
+### Validation
+
+- Validated all six component manifests as JSON.
+- Confirmed that all 60 components contain non-empty `overview`, `mainFunctions` and `workingPrinciple` fields.
+- Confirmed that the migrated manifests no longer contain `function`, `location` or `maintenance` fields.
+- Checked the updated files for replacement-character encoding errors.
+- Ran the backend unit test successfully after the catalogue and metadata changes.
+- Frontend build validation was not available because npm was not installed in the active Windows or WSL environment.
+
 ## 2026-09-28
 
 ### Model library

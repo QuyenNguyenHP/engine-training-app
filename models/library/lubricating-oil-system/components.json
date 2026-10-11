@@ -4,13 +4,29 @@
     "name": "Centrifugal oil filter",
     "system": "Lubricating oil system",
     "modelObjectName": "CentrifugaloilFilter",
-    "function": "Removes fine contaminants from lubricating oil by centrifugal separation.",
-    "location": "Oil-cleaning branch of the lubricating oil circuit",
-    "maintenance": "Clean the rotor and housing, inspect seals and confirm that the rotor turns freely.",
-    "position": [0, 0, 0],
-    "explodeOffset": [0.8, 0.8, -0.4],
+    "overview": "An oil-cleaning device that separates solid contaminants using a rapidly rotating rotor.",
+    "mainFunctions": [
+      "Removes particles and sludge from the oil stream routed through it.",
+      "Supplements the main filtration arrangement.",
+      "Helps reduce abrasive contamination in the lubrication system."
+    ],
+    "workingPrinciple": "Oil enters a spinning rotor. Particles denser than the oil migrate towards its outer wall and accumulate there, while cleaned oil leaves the device. Some designs use oil jets to drive the rotor. Whether it treats bypass oil or backwash oil must be confirmed from the system diagram.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      0.8,
+      0.8,
+      -0.4
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#b69252"
   },
   {
@@ -18,13 +34,29 @@
     "name": "Automatic backwash filter",
     "system": "Lubricating oil system",
     "modelObjectName": "LOAutomaticBackWashFilter",
-    "function": "Continuously filters lubricating oil and automatically clears accumulated debris from the filter elements.",
-    "location": "Main lubricating oil filtration line",
-    "maintenance": "Monitor differential pressure and backwash operation; inspect filter elements, valves and drain connections.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-0.8, 0.8, -0.4],
+    "overview": "A filter that traps contaminants and cleans its filtering elements automatically by reversing flow through selected sections.",
+    "mainFunctions": [
+      "Removes solids from circulating lubricating oil.",
+      "Cleans filter elements during operation.",
+      "Maintains oil supply through the available filtering sections."
+    ],
+    "workingPrinciple": "Oil normally flows through filter elements that retain particles. A timed or differential-pressure-based sequence initiates reverse flow through a selected element or section. This removes deposited material into a backwash outlet. The disposal or cleaning route for backwash oil depends on the installation.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -0.8,
+      0.8,
+      -0.4
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#c3a064"
   },
   {
@@ -32,13 +64,29 @@
     "name": "Lubricating oil filter fitting",
     "system": "Lubricating oil system",
     "modelObjectName": "LOFilterFitting",
-    "function": "Connects the filter assembly to the lubricating oil piping and maintains a sealed flow path.",
-    "location": "At the lubricating oil filter connections",
-    "maintenance": "Inspect joints, fasteners and seals for looseness, damage or oil leakage.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-0.8, -0.6, -0.4],
+    "overview": "The connection, adapter or mounting assembly associated with the lubricating oil filter. The screenshot label does not identify its internal features.",
+    "mainFunctions": [
+      "Connects the filter to the oil circuit.",
+      "Provides a secure mounting or sealed connection, depending on the part.",
+      "Routes oil through the intended inlet and outlet connections."
+    ],
+    "workingPrinciple": "Pressurised oil passes through the fitting or connected passages to and from the filter. Seals and mechanical joints prevent external leakage. Do not assume this part contains a bypass valve, pressure sensor or filter element unless the drawing confirms it.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -0.8,
+      -0.6,
+      -0.4
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#9d855e"
   },
   {
@@ -46,13 +94,29 @@
     "name": "Lubricating oil pump",
     "system": "Lubricating oil system",
     "modelObjectName": "LOPump",
-    "function": "Circulates lubricating oil through the engine at the pressure and flow needed to protect moving parts.",
-    "location": "Supply side of the lubricating oil circuit",
-    "maintenance": "Check delivery pressure, noise, vibration, coupling condition and seals for leakage.",
-    "position": [0, 0, 0],
-    "explodeOffset": [0.9, -0.7, 0.5],
+    "overview": "The pump that circulates oil to the engine's lubricated components.",
+    "mainFunctions": [
+      "Supplies oil flow to bearings and other lubrication points.",
+      "Circulates oil through the applicable cooling and filtration circuit.",
+      "Supports heat removal from lubricated components."
+    ],
+    "workingPrinciple": "A pump draws oil from the sump or supply tank and delivers it into the oil circuit. Positive-displacement pumps are common: moving chambers carry oil from the inlet to the outlet. Circuit resistance produces pressure, and a regulating or relief arrangement limits excessive pressure.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      0.9,
+      -0.7,
+      0.5
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#c28b55"
   },
   {
@@ -60,13 +124,29 @@
     "name": "Lubricating oil pump piping",
     "system": "Lubricating oil system",
     "modelObjectName": "LOPumpPiping",
-    "function": "Routes lubricating oil between the pump, filters, cooler and engine oil galleries.",
-    "location": "Around the lubricating oil pump and treatment equipment",
-    "maintenance": "Inspect pipes, supports, flanges and flexible connections for leakage, corrosion or vibration damage.",
-    "position": [0, 0, 0],
-    "explodeOffset": [0, -0.8, 0.8],
+    "overview": "The suction and delivery piping connecting the oil pump with the engine lubrication circuit.",
+    "mainFunctions": [
+      "Carries oil to the pump inlet.",
+      "Delivers pumped oil to downstream equipment.",
+      "Provides sealed flow connections between system components."
+    ],
+    "workingPrinciple": "The pump creates a pressure difference that moves oil through the connected piping. Pipe dimensions, restrictions and oil viscosity influence flow resistance. The actual sequence of pump, cooler and filter must follow the engine's lubrication diagram.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      0,
+      -0.8,
+      0.8
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#8b765a"
   },
   {
@@ -74,13 +154,29 @@
     "name": "Lubricating oil thermostatic valve",
     "system": "Lubricating oil system",
     "modelObjectName": "LOThermpstatValve_",
-    "function": "Regulates oil flow through the cooler to maintain the required lubricating oil temperature.",
-    "location": "At the lubricating oil cooler bypass junction",
-    "maintenance": "Verify the opening temperature and movement; inspect the valve element and seals for sticking or leakage.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-0.9, 0.2, 0.6],
+    "overview": "A temperature-responsive valve that regulates oil flow through a cooler and its bypass route.",
+    "mainFunctions": [
+      "Helps maintain suitable oil supply temperature.",
+      "Limits unnecessary cooling during warm-up.",
+      "Adjusts the proportion of cooled and bypassed oil."
+    ],
+    "workingPrinciple": "A temperature-sensitive element changes valve position as oil temperature changes. The valve varies the flow split between cooler and bypass passages, or mixes the returning streams, depending on its arrangement. This controls cooling without directly setting the engine's oil pressure.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -0.9,
+      0.2,
+      0.6
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#a9834f"
   },
   {
@@ -88,13 +184,29 @@
     "name": "Plate heat exchanger",
     "system": "Lubricating oil system",
     "modelObjectName": "PlateHeatExchanger",
-    "function": "Transfers heat from the lubricating oil to the cooling medium without mixing the fluids.",
-    "location": "Cooling section of the lubricating oil circuit",
-    "maintenance": "Check temperatures and pressure drop; inspect plates, gaskets and connections for fouling or leakage.",
-    "position": [0, 0, 0],
-    "explodeOffset": [0, 1, 0.5],
+    "overview": "A heat exchanger using stacked plates to transfer heat between lubricating oil and a cooling fluid.",
+    "mainFunctions": [
+      "Removes heat from lubricating oil.",
+      "Keeps oil and coolant in separate flow passages.",
+      "Provides a large heat-transfer surface in a compact assembly."
+    ],
+    "workingPrinciple": "Hot oil and cooler fluid flow through separate channels on opposite sides of thin plates. Heat passes through the plates into the cooling fluid. The fluids remain separated in normal operation. Flow direction and sealing method depend on the exchanger design.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      0,
+      1,
+      0.5
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#718da5"
   }
 ]

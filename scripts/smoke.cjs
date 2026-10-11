@@ -15,7 +15,7 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
     await page.getByRole('button',{name:'Isolate',exact:true}).click();
     await page.getByRole('button',{name:'Hide component',exact:true}).click();
     await page.getByRole('button',{name:'Reset all'}).click();
-    await page.getByRole('heading',{name:'Explore the engine'}).waitFor();
+    await page.getByRole('heading',{name:'Lubricating Oil System'}).waitFor();
     const health=await page.request.get(new URL('/api/v1/health',page.url()).href);
     if(!health.ok())throw Error('Health check failed');
     await page.waitForTimeout(1500);

@@ -3,91 +3,203 @@
     "id": "cylinder-head-cover",
     "name": "Cylinder head cover",
     "modelObjectName": "CylinderHeadCover",
-    "function": "Encloses and protects the upper valve gear.",
-    "location": "Top of cylinder head",
-    "maintenance": "Inspect gasket, fasteners and signs of oil leakage.",
-    "position": [0, 0, 0],
-    "explodeOffset": [0, 2, 0],
+    "overview": "The removable cover enclosing the upper cylinder-head valve mechanism.",
+    "mainFunctions": [
+      "Protects rocker arms and other enclosed valve components.",
+      "Contains lubricating oil splash and mist.",
+      "Provides service access when removed."
+    ],
+    "workingPrinciple": "The stationary cover encloses the moving valve mechanism, usually using a gasket or seal at its joint. It helps keep oil inside and contamination outside. It is distinct from the structural cylinder head and does not normally contain combustion pressure.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      0,
+      2,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#7895ae"
   },
   {
     "id": "cylinder-head-hfo",
     "name": "Cylinder head HFO",
     "modelObjectName": "CylinderHeadHFO",
-    "function": "Forms the cylinder head structure for heavy-fuel operation.",
-    "location": "Above cylinder liner",
-    "maintenance": "Inspect sealing faces, cooling passages and valve seats.",
-    "position": [0, 0, 0],
-    "explodeOffset": [0, 1.1, 0.5],
+    "overview": "The cylinder-head assembly labelled \"Cylinder head HFO\" in the model. HFO usually means heavy fuel oil; this label alone does not identify the assembly's exact configuration.",
+    "mainFunctions": [
+      "Closes the top of the cylinder and forms part of the combustion chamber.",
+      "Supports the fitted valves and fuel-injection equipment.",
+      "Transfers combustion loads and heat into the surrounding engine structure and cooling system."
+    ],
+    "workingPrinciple": "The head is secured to the engine structure and seals the cylinder at its upper end. In a conventional liquid-fuel diesel arrangement, an injector sprays fuel into compressed hot air, while the inlet and exhaust valves control gas exchange. Internal cooling passages remove heat where fitted. Confirm the meaning of the HFO label before describing specific fuel hardware.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      0,
+      1.1,
+      0.5
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#6e8fa9"
   },
   {
     "id": "cylinder-liner",
     "name": "Cylinder liner",
     "modelObjectName": "CylinderLiner",
-    "function": "Provides the running surface for the piston.",
-    "location": "Inside cylinder block",
-    "maintenance": "Measure wear and inspect lubrication condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [0, -1.8, 0],
+    "overview": "The cylindrical sleeve that forms the working bore in which the piston moves.",
+    "mainFunctions": [
+      "Provides the running surface for the piston rings.",
+      "Helps contain combustion pressure with the piston and head.",
+      "Transfers heat towards the engine cooling arrangement."
+    ],
+    "workingPrinciple": "The piston reciprocates inside the liner while its rings seal against the bore. A thin oil film reduces friction and wear. Heat passes through the liner wall towards the surrounding structure or coolant. Wet liners contact coolant externally; dry liners transfer heat through their supporting structure.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      0,
+      -1.8,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#76a7a0"
   },
   {
     "id": "in-ex-tappet",
     "name": "Inlet and exhaust tappet",
     "modelObjectName": "In&ExTappet",
-    "function": "Transfers cam motion to the valve train.",
-    "location": "Valve gear",
-    "maintenance": "Inspect contact faces and clearance.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.2, 0.7, -1.5],
+    "overview": "A cam-following component that transmits cam movement into the inlet or exhaust valve mechanism.",
+    "mainFunctions": [
+      "Follows the cam profile.",
+      "Transfers movement to the connected valve train.",
+      "Helps establish the valve-lift sequence through the mechanical linkage."
+    ],
+    "workingPrinciple": "As the cam rotates, its lobe displaces the tappet. Movement passes through the applicable pushrod or linkage to open the valve. As the cam returns towards its base circle, the valve spring closes the valve and maintains the designed contact through the mechanism.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.2,
+      0.7,
+      -1.5
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#bd9263"
   },
   {
     "id": "indicator-valve",
     "name": "Indicator valve",
     "modelObjectName": "IndicatorValve",
-    "function": "Provides a connection for cylinder pressure indication.",
-    "location": "Cylinder head",
-    "maintenance": "Keep passages clean and verify sealing.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-1.5, 1.2, 0],
+    "overview": "A small valve providing controlled access to the cylinder's combustion-pressure passage.",
+    "mainFunctions": [
+      "Provides a connection for cylinder-pressure measurement.",
+      "Isolates the measurement passage during normal operation.",
+      "Allows approved venting or diagnostic procedures where specified."
+    ],
+    "workingPrinciple": "When closed, the valve isolates cylinder pressure. When opened for an authorised procedure, its passage connects the cylinder to an attached indicator or pressure-measuring device, or to a permitted vent route. It is not an inlet valve, exhaust valve or general pressure-relief valve.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -1.5,
+      1.2,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#8b7b9d"
   },
   {
     "id": "intake-exhaust-valve",
     "name": "Intake and exhaust valve",
     "modelObjectName": "IntakeExhaustValve",
-    "function": "Controls gas flow into and out of the cylinder.",
-    "location": "Cylinder head",
-    "maintenance": "Inspect seating, stem and clearance.",
-    "position": [0, 0, 0],
-    "explodeOffset": [0, 1.2, -1.5],
+    "overview": "The valves that control fresh-air entry and exhaust-gas exit at the cylinder head.",
+    "mainFunctions": [
+      "Admit fresh charge during intake.",
+      "Release combustion products during exhaust.",
+      "Seal their respective passages during compression and combustion."
+    ],
+    "workingPrinciple": "The valve train opens each valve according to the engine timing, and springs normally return it to its seat. Intake valves allow air or, in some dual-fuel arrangements, an air-gas mixture into the cylinder. Exhaust valves release spent gases. Actual timing includes design-specific lead, lag and overlap.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      0,
+      1.2,
+      -1.5
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#ba8f61"
   },
   {
     "id": "valve-rocker-arm",
     "name": "Valve rocker arm",
     "modelObjectName": "ValveRockerArm",
-    "function": "Transfers valve-gear motion to the valve stem.",
-    "location": "Cylinder head",
-    "maintenance": "Inspect contact surfaces and lubrication.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-1.5, 2, 0.7],
+    "overview": "A pivoting lever that transmits valve-train movement to a valve stem or valve bridge.",
+    "mainFunctions": [
+      "Transfers movement towards the valve.",
+      "Changes movement direction and provides the designed lever ratio.",
+      "Provides a valve-clearance adjustment point in applicable designs."
+    ],
+    "workingPrinciple": "Cam-driven movement causes the rocker arm to pivot on its shaft or support. The opposite end presses on the valve stem or bridge, opening the valve against spring force. When the driving movement reduces, the spring closes the valve. Lubrication protects the pivot and contact surfaces.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -1.5,
+      2,
+      0.7
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#809aa4"
   }
 ]

@@ -3,325 +3,733 @@
     "id": "aux-driving-gear",
     "name": "Auxiliary driving gear",
     "modelObjectName": "AuxMachineDrivingGear",
-    "function": "Drives auxiliary machinery through the gear train.",
-    "location": "Auxiliary drive end",
-    "maintenance": "Inspect gear teeth, lubrication and backlash.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.2, -1, 0],
+    "overview": "A gear in the engine drive train that transmits rotation to an auxiliary mechanism.",
+    "mainFunctions": [
+      "Transfers mechanical power to the connected auxiliary equipment.",
+      "Establishes the required rotational speed ratio.",
+      "Maintains a mechanical relationship with the engine drive train."
+    ],
+    "workingPrinciple": "Meshing gear teeth transfer torque from a driving shaft to the auxiliary drive. Tooth counts determine the speed ratio, while the gear arrangement determines rotation direction. The driven equipment must be identified from the drawing; it may be a pump or another mechanism.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.2,
+      -1,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#7895ae"
   },
   {
     "id": "balance-weight",
     "name": "Balance weight",
     "modelObjectName": "BlanceWeight",
-    "function": "Balances rotating masses to reduce vibration.",
-    "location": "Crankshaft assembly",
-    "maintenance": "Inspect mounting and balance condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-0.4, -1.5, 0.7],
+    "overview": "A counterweight fitted to a rotating assembly, commonly the crankshaft, to help balance rotating masses and reduce associated loads.",
+    "mainFunctions": [
+      "Improves the balance of the rotating assembly.",
+      "Reduces selected inertia-related bearing loads.",
+      "Helps control vibration associated with mass imbalance."
+    ],
+    "workingPrinciple": "As the shaft rotates, the counterweight produces a centrifugal force. Its mass and position are selected to oppose specified imbalance forces from the rotating and, in some designs, part of the reciprocating masses. It does not cancel every engine vibration or replace a torsional damper.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -0.4,
+      -1.5,
+      0.7
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#6e8fa9"
   },
   {
     "id": "cam-shaft",
     "name": "Cam shaft",
     "modelObjectName": "CamShaft",
-    "function": "Controls valve timing through cam profiles.",
-    "location": "Timing assembly",
-    "maintenance": "Check lobe wear, journals and timing alignment.",
-    "position": [0, 0, 0],
-    "explodeOffset": [0, 1.8, -1],
+    "overview": "A shaft with shaped cams that coordinates valve operation and other cam-driven events.",
+    "mainFunctions": [
+      "Determines the timing and lift of cam-operated valves.",
+      "Coordinates valve events with piston position.",
+      "Drives other timed mechanisms where the engine design requires them."
+    ],
+    "workingPrinciple": "In a conventional four-stroke engine, the camshaft rotates once for every two crankshaft revolutions. Cam lobes move followers and the connected valve mechanism. Each cam profile controls when a valve opens, how far it opens and when it closes.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      0,
+      1.8,
+      -1
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#bd9263"
   },
   {
     "id": "cam-shaft-bearing",
     "name": "Cam shaft bearing",
     "modelObjectName": "CamShaftBearing",
-    "function": "Supports the cam shaft and permits rotation.",
-    "location": "Cam shaft housing",
-    "maintenance": "Check clearance and lubrication condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [0, 2.7, -1.3],
+    "overview": "A bearing that supports the camshaft within the engine structure.",
+    "mainFunctions": [
+      "Maintains camshaft alignment.",
+      "Carries loads from the cam-driven mechanisms.",
+      "Allows rotation with controlled friction and clearance."
+    ],
+    "workingPrinciple": "The bearing supports the camshaft journal as it rotates. In a plain-bearing arrangement, supplied oil forms a lubricating film between journal and bearing surface. Bearing type and axial-location arrangements must be confirmed for the specific engine.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      0,
+      2.7,
+      -1.3
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#88a5ad"
   },
   {
     "id": "connecting-rod-1",
     "name": "Connecting rod 1",
     "modelObjectName": "Con1",
-    "function": "Transfers piston motion to the crankshaft.",
-    "location": "Cylinder 1, between piston and crankshaft",
-    "maintenance": "Inspect bearings, bolts and alignment.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.4, 1.4, 0],
+    "overview": "The connecting rod identified as item 1 in the model, linking its associated piston to a crankshaft crankpin.",
+    "mainFunctions": [
+      "Transfers piston force to the crankshaft.",
+      "Links reciprocating piston motion with crankshaft rotation.",
+      "Carries alternating combustion and inertia loads."
+    ],
+    "workingPrinciple": "The small end pivots at the piston pin and the big end rotates around a crankpin. During the power stroke, piston force creates crankshaft torque. During other strokes, crankshaft rotation moves the piston through the rod. The model number does not establish cylinder numbering or firing order.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.4,
+      1.4,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#76a7a0"
   },
   {
     "id": "connecting-rod-2",
     "name": "Connecting rod 2",
     "modelObjectName": "Con2",
-    "function": "Transfers piston motion to the crankshaft.",
-    "location": "Cylinder 2, between piston and crankshaft",
-    "maintenance": "Inspect bearings, bolts and alignment.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.4, 1.4, 0],
+    "overview": "The connecting rod identified as item 2, joining its associated piston and crankpin.",
+    "mainFunctions": [
+      "Transmits force between piston and crankshaft.",
+      "Supports the conversion between reciprocating and rotating motion.",
+      "Carries combustion and inertia loads for its associated piston."
+    ],
+    "workingPrinciple": "The rod oscillates as its piston moves along the cylinder and its crankpin follows a circular path. Pivoting connections at both ends accommodate this movement. Its principle is the same as connecting rod 1; its position and operating phase depend on the actual cylinder arrangement.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.4,
+      1.4,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#76a7a0"
   },
   {
     "id": "connecting-rod-3",
     "name": "Connecting rod 3",
     "modelObjectName": "Con3",
-    "function": "Transfers piston motion to the crankshaft.",
-    "location": "Cylinder 3, between piston and crankshaft",
-    "maintenance": "Inspect bearings, bolts and alignment.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.4, 1.4, 0],
+    "overview": "The connecting rod identified as item 3 in the rotating assembly.",
+    "mainFunctions": [
+      "Connects its piston to the crankshaft.",
+      "Transfers power-stroke force to a crankpin.",
+      "Transmits the forces needed to move the piston during the remaining strokes."
+    ],
+    "workingPrinciple": "The piston pin and crankpin connections allow the rod to change angle throughout crankshaft rotation. Gas pressure and piston acceleration create changing axial loads in the rod. Its model label should be mapped to the correct cylinder using the engine drawing.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.4,
+      1.4,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#76a7a0"
   },
   {
     "id": "connecting-rod-4",
     "name": "Connecting rod 4",
     "modelObjectName": "Con4",
-    "function": "Transfers piston motion to the crankshaft.",
-    "location": "Cylinder 4, between piston and crankshaft",
-    "maintenance": "Inspect bearings, bolts and alignment.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.4, 1.4, 0],
+    "overview": "The connecting rod identified as item 4, forming a mechanical link between its piston and crankshaft.",
+    "mainFunctions": [
+      "Transfers piston forces to the crankshaft.",
+      "Coordinates piston movement with crankpin rotation.",
+      "Carries changing compression and tension loads during operation."
+    ],
+    "workingPrinciple": "The crankpin travels around the crankshaft axis while the piston remains constrained by the cylinder. The rod's changing angle connects these motions. Lubricated bearing interfaces allow relative movement while transmitting load.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.4,
+      1.4,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#76a7a0"
   },
   {
     "id": "connecting-rod-5",
     "name": "Connecting rod 5",
     "modelObjectName": "Con5",
-    "function": "Transfers piston motion to the crankshaft.",
-    "location": "Cylinder 5, between piston and crankshaft",
-    "maintenance": "Inspect bearings, bolts and alignment.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.4, 1.4, 0],
+    "overview": "The connecting rod identified as item 5 in the model.",
+    "mainFunctions": [
+      "Connects the associated piston and crankpin.",
+      "Transfers combustion energy into the crankshaft mechanism.",
+      "Carries reciprocating inertia loads."
+    ],
+    "workingPrinciple": "Piston force passes through the piston pin, rod and big-end bearing to the crankpin. Crank geometry converts part of that force into shaft torque. At other points in the cycle, the crankshaft drives the piston through the same linkage.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.4,
+      1.4,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#76a7a0"
   },
   {
     "id": "connecting-rod-6",
     "name": "Connecting rod 6",
     "modelObjectName": "Con6",
-    "function": "Transfers piston motion to the crankshaft.",
-    "location": "Cylinder 6, between piston and crankshaft",
-    "maintenance": "Inspect bearings, bolts and alignment.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.4, 1.4, 0],
+    "overview": "The connecting rod identified as item 6, associated with one piston-crank mechanism.",
+    "mainFunctions": [
+      "Transmits load between piston and crankshaft.",
+      "Converts motion through the piston-and-crank linkage.",
+      "Supports repeated changes in loading throughout the engine cycle."
+    ],
+    "workingPrinciple": "The rod pivots at its small end and follows the crankpin at its big end. This permits the piston to reciprocate while the shaft rotates. The same mechanical principle applies to all the numbered rods; their relative phases follow the engine's crank arrangement.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.4,
+      1.4,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#76a7a0"
   },
   {
     "id": "connecting-rod-7",
     "name": "Connecting rod 7",
     "modelObjectName": "Con7",
-    "function": "Transfers piston motion to the crankshaft.",
-    "location": "Cylinder 7, between piston and crankshaft",
-    "maintenance": "Inspect bearings, bolts and alignment.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.4, 1.4, 0],
+    "overview": "The connecting rod identified as item 7 in the rotating assembly.",
+    "mainFunctions": [
+      "Links its piston to the crankshaft.",
+      "Carries power-stroke and inertia forces.",
+      "Transfers motion in both directions through the linkage."
+    ],
+    "workingPrinciple": "During combustion, the rod transfers piston load to the rotating crankpin. During intake, compression and exhaust, crankshaft energy helps move the piston through the rod. The bearing connections allow the necessary relative movement without fixing the rod rigidly to either pin.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.4,
+      1.4,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#76a7a0"
   },
   {
     "id": "connecting-rod-8",
     "name": "Connecting rod 8",
     "modelObjectName": "Con8",
-    "function": "Transfers piston motion to the crankshaft.",
-    "location": "Cylinder 8, between piston and crankshaft",
-    "maintenance": "Inspect bearings, bolts and alignment.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.4, 1.4, 0],
+    "overview": "The connecting rod identified as item 8 in the model.",
+    "mainFunctions": [
+      "Connects the associated piston and crankpin.",
+      "Transfers load into and out of the crankshaft mechanism.",
+      "Accommodates the changing angle between piston motion and crank rotation."
+    ],
+    "workingPrinciple": "As the crankshaft turns, the rod alternately pushes and pulls its piston according to the forces acting during the cycle. Its operating principle matches the other rods. Confirm that the numbered meshes represent separate rods before treating the labels as eight distinct cylinders.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.4,
+      1.4,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#76a7a0"
   },
   {
     "id": "crank-shaft",
     "name": "Crank shaft",
     "modelObjectName": "CrankShaft",
-    "function": "Converts piston motion into rotary motion.",
-    "location": "Main rotating assembly",
-    "maintenance": "Check journals, bearings and runout.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-0.8, -1.5, 0],
+    "overview": "The main rotating shaft that receives forces from the connecting rods and delivers mechanical output.",
+    "mainFunctions": [
+      "Converts piston forces into rotational torque through its crank geometry.",
+      "Transmits power to the generator or other driven equipment.",
+      "Drives the engine timing train and auxiliaries where connected."
+    ],
+    "workingPrinciple": "Connecting rods apply forces to offset crankpins, producing torque about the shaft axis. Main bearings support the journals and carry the resulting reactions into the engine structure. The shaft experiences bending and torsional loading as successive cylinders operate.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -0.8,
+      -1.5,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#6e8fa9"
   },
   {
     "id": "flexible-coupling",
     "name": "Flexible coupling",
     "modelObjectName": "FlexibleCoupling",
-    "function": "Transmits torque while absorbing limited misalignment.",
-    "location": "Drive end",
-    "maintenance": "Inspect coupling elements and bolt tightness.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-1.6, 0, 0],
+    "overview": "A torque-transmitting connection between the engine shaft and a driven shaft, using flexible elements or a flexible mechanical arrangement.",
+    "mainFunctions": [
+      "Transmits engine torque to the driven equipment.",
+      "Accommodates limited movement or misalignment within its rating.",
+      "Modifies torsional behaviour and, in some designs, provides damping."
+    ],
+    "workingPrinciple": "Flexible elements deform under torque while maintaining the mechanical connection between shafts. Their stiffness influences how torque fluctuations pass through the drive train. Damping depends on the coupling design; flexibility alone does not guarantee substantial vibration damping.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -1.6,
+      0,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#be9a62"
   },
   {
     "id": "front-end-damper",
     "name": "Front end damper",
     "modelObjectName": "FrontEndDamper",
-    "function": "Damps torsional vibration in the rotating assembly.",
-    "location": "Front end of crankshaft",
-    "maintenance": "Inspect damping element and fasteners.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.4, -1, 0],
+    "overview": "A device at the crankshaft front end, commonly intended to control torsional vibration. Confirm the represented damper type from the drawing.",
+    "mainFunctions": [
+      "Reduces specified crankshaft torsional oscillations.",
+      "Limits vibration-related cyclic stress.",
+      "Protects the shaft and connected drive components within its design range."
+    ],
+    "workingPrinciple": "A torsional damper permits controlled relative motion between the crankshaft-connected housing and an inertia element. Viscous or other damping mechanisms dissipate oscillation energy. Its purpose is to control twisting vibration, rather than simply balance the crankshaft's rotating mass.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.4,
+      -1,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#8b7b9d"
   },
   {
     "id": "idle-gear",
     "name": "Idle gear",
     "modelObjectName": "IdleGear",
-    "function": "Transfers rotation between driving and driven gears.",
-    "location": "Gear train",
-    "maintenance": "Inspect tooth condition, backlash and lubrication.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.2, 0, -1.6],
+    "overview": "An intermediate gear, normally called an idler gear, positioned between other gears in the engine drive train.",
+    "mainFunctions": [
+      "Transfers rotation and torque between connected gears.",
+      "Bridges the distance between driving and driven shafts.",
+      "Establishes the required direction of rotation through the gear arrangement."
+    ],
+    "workingPrinciple": "The driving gear turns the idler, which then turns the next gear. Each external gear mesh reverses rotation direction. A simple idler changes the routing and direction of the drive without changing the overall speed-ratio magnitude set by the first and last gears. Compound gear arrangements behave differently. Confirm its position before identifying it as part of the camshaft or auxiliary drive.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.2,
+      0,
+      -1.6
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#ba8f61"
   },
   {
     "id": "main-bearing",
     "name": "Main bearing",
     "modelObjectName": "MainBearing",
-    "function": "Supports the crankshaft main journals.",
-    "location": "Crankcase",
-    "maintenance": "Check bearing clearance and lubrication supply.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-0.4, -2, 0.8],
+    "overview": "A bearing supporting a crankshaft main journal within the engine structure. It is distinct from a connecting-rod big-end bearing, which runs on a crankpin.",
+    "mainFunctions": [
+      "Supports the crankshaft and maintains its alignment.",
+      "Transfers radial combustion and inertia reactions into the engine structure.",
+      "Allows rotation with low friction when correctly lubricated."
+    ],
+    "workingPrinciple": "In a typical plain main bearing, oil is supplied between the journal and bearing shell. Journal rotation draws oil into a converging clearance, developing a hydrodynamic film that supports the load during normal running. Oil also removes heat. Bearing clearance, oil viscosity and alignment affect film formation. Axial crankshaft location is provided by a designated thrust-bearing arrangement, not necessarily by every main bearing.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -0.4,
+      -2,
+      0.8
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#809aa4"
   },
   {
     "id": "piston-1",
     "name": "Piston 1",
     "modelObjectName": "piston1",
-    "function": "Transfers combustion pressure to the connecting rod.",
-    "location": "Cylinder 1",
-    "maintenance": "Inspect rings, skirt and pin condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.5, 2.3, 0],
+    "overview": "The piston identified as item 1 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.",
+    "mainFunctions": [
+      "Receives combustion-gas pressure and transfers force to the connecting rod.",
+      "Changes cylinder volume during intake, compression, power and exhaust strokes.",
+      "Works with piston rings to limit gas leakage and control the lubricating oil film.",
+      "Transfers heat through the rings and other cooling paths provided by the design."
+    ],
+    "workingPrinciple": "In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label \"Piston 1\" identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.5,
+      2.3,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#cfb06a"
   },
   {
     "id": "piston-2",
     "name": "Piston 2",
     "modelObjectName": "piston2",
-    "function": "Transfers combustion pressure to the connecting rod.",
-    "location": "Cylinder 2",
-    "maintenance": "Inspect rings, skirt and pin condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.5, 2.3, 0],
+    "overview": "The piston identified as item 2 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.",
+    "mainFunctions": [
+      "Receives combustion-gas pressure and transfers force to the connecting rod.",
+      "Changes cylinder volume during intake, compression, power and exhaust strokes.",
+      "Works with piston rings to limit gas leakage and control the lubricating oil film.",
+      "Transfers heat through the rings and other cooling paths provided by the design."
+    ],
+    "workingPrinciple": "In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label \"Piston 2\" identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.5,
+      2.3,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#cfb06a"
   },
   {
     "id": "piston-3",
     "name": "Piston 3",
     "modelObjectName": "piston3",
-    "function": "Transfers combustion pressure to the connecting rod.",
-    "location": "Cylinder 3",
-    "maintenance": "Inspect rings, skirt and pin condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.5, 2.3, 0],
+    "overview": "The piston identified as item 3 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.",
+    "mainFunctions": [
+      "Receives combustion-gas pressure and transfers force to the connecting rod.",
+      "Changes cylinder volume during intake, compression, power and exhaust strokes.",
+      "Works with piston rings to limit gas leakage and control the lubricating oil film.",
+      "Transfers heat through the rings and other cooling paths provided by the design."
+    ],
+    "workingPrinciple": "In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label \"Piston 3\" identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.5,
+      2.3,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#cfb06a"
   },
   {
     "id": "piston-4",
     "name": "Piston 4",
     "modelObjectName": "piston4",
-    "function": "Transfers combustion pressure to the connecting rod.",
-    "location": "Cylinder 4",
-    "maintenance": "Inspect rings, skirt and pin condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.5, 2.3, 0],
+    "overview": "The piston identified as item 4 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.",
+    "mainFunctions": [
+      "Receives combustion-gas pressure and transfers force to the connecting rod.",
+      "Changes cylinder volume during intake, compression, power and exhaust strokes.",
+      "Works with piston rings to limit gas leakage and control the lubricating oil film.",
+      "Transfers heat through the rings and other cooling paths provided by the design."
+    ],
+    "workingPrinciple": "In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label \"Piston 4\" identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.5,
+      2.3,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#cfb06a"
   },
   {
     "id": "piston-5",
     "name": "Piston 5",
     "modelObjectName": "piston5",
-    "function": "Transfers combustion pressure to the connecting rod.",
-    "location": "Cylinder 5",
-    "maintenance": "Inspect rings, skirt and pin condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.5, 2.3, 0],
+    "overview": "The piston identified as item 5 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.",
+    "mainFunctions": [
+      "Receives combustion-gas pressure and transfers force to the connecting rod.",
+      "Changes cylinder volume during intake, compression, power and exhaust strokes.",
+      "Works with piston rings to limit gas leakage and control the lubricating oil film.",
+      "Transfers heat through the rings and other cooling paths provided by the design."
+    ],
+    "workingPrinciple": "In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label \"Piston 5\" identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.5,
+      2.3,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#cfb06a"
   },
   {
     "id": "piston-6",
     "name": "Piston 6",
     "modelObjectName": "piston6",
-    "function": "Transfers combustion pressure to the connecting rod.",
-    "location": "Cylinder 6",
-    "maintenance": "Inspect rings, skirt and pin condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.5, 2.3, 0],
+    "overview": "The piston identified as item 6 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.",
+    "mainFunctions": [
+      "Receives combustion-gas pressure and transfers force to the connecting rod.",
+      "Changes cylinder volume during intake, compression, power and exhaust strokes.",
+      "Works with piston rings to limit gas leakage and control the lubricating oil film.",
+      "Transfers heat through the rings and other cooling paths provided by the design."
+    ],
+    "workingPrinciple": "In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label \"Piston 6\" identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.5,
+      2.3,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#cfb06a"
   },
   {
     "id": "piston-7",
     "name": "Piston 7",
     "modelObjectName": "piston7",
-    "function": "Transfers combustion pressure to the connecting rod.",
-    "location": "Cylinder 7",
-    "maintenance": "Inspect rings, skirt and pin condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.5, 2.3, 0],
+    "overview": "The piston identified as item 7 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.",
+    "mainFunctions": [
+      "Receives combustion-gas pressure and transfers force to the connecting rod.",
+      "Changes cylinder volume during intake, compression, power and exhaust strokes.",
+      "Works with piston rings to limit gas leakage and control the lubricating oil film.",
+      "Transfers heat through the rings and other cooling paths provided by the design."
+    ],
+    "workingPrinciple": "In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label \"Piston 7\" identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.5,
+      2.3,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#cfb06a"
   },
   {
     "id": "piston-8",
     "name": "Piston 8",
     "modelObjectName": "piston8",
-    "function": "Transfers combustion pressure to the connecting rod.",
-    "location": "Cylinder 8",
-    "maintenance": "Inspect rings, skirt and pin condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.5, 2.3, 0],
+    "overview": "The piston identified as item 8 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.",
+    "mainFunctions": [
+      "Receives combustion-gas pressure and transfers force to the connecting rod.",
+      "Changes cylinder volume during intake, compression, power and exhaust strokes.",
+      "Works with piston rings to limit gas leakage and control the lubricating oil film.",
+      "Transfers heat through the rings and other cooling paths provided by the design."
+    ],
+    "workingPrinciple": "In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label \"Piston 8\" identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.5,
+      2.3,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#cfb06a"
   }
 ]

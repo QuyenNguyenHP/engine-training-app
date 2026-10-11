@@ -3,78 +3,174 @@
     "id": "common-bed",
     "name": "Common bed",
     "modelObjectName": "CommonBed",
-    "function": "Provides the common mounting base for the generator set.",
-    "location": "Base frame",
-    "maintenance": "Inspect mounting bolts, alignment and foundation condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [0, -1.5, 0],
+    "overview": "The shared supporting base for the engine and generator assembly.",
+    "mainFunctions": [
+      "Supports engine and generator weight.",
+      "Helps maintain their relative alignment.",
+      "Transfers structural loads to the installation mountings and foundation."
+    ],
+    "workingPrinciple": "Engine and generator mounting points are fixed to the common bed. Its stiffness limits relative movement under weight and operating loads. Loads pass through the bed and the selected rigid or resilient mounting arrangement into the ship's supporting structure.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      0,
+      -1.5,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#7895ae"
   },
   {
     "id": "cover-flywheel",
     "name": "Flywheel cover",
     "modelObjectName": "CoverFlywheel",
-    "function": "Guards the flywheel area.",
-    "location": "Flywheel end",
-    "maintenance": "Inspect guards and fasteners before operation.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-1.7, 0.5, 0],
+    "overview": "A stationary cover or guard around the flywheel area.",
+    "mainFunctions": [
+      "Reduces access to rotating flywheel components.",
+      "Helps protect the enclosed area from foreign objects.",
+      "Provides access openings or interfaces where designed."
+    ],
+    "workingPrinciple": "The flywheel rotates inside or behind the cover, while the cover remains attached to the stationary structure. The cover does not store rotational energy; that is the flywheel's role. Whether it also serves as a structural housing or contains oil depends on the assembly design.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -1.7,
+      0.5,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#6e8fa9"
   },
   {
     "id": "generator",
     "name": "Generator",
     "modelObjectName": "Generator",
-    "function": "Converts mechanical rotation into electrical energy.",
-    "location": "Generator end of set",
-    "maintenance": "Inspect terminals, bearings and insulation condition.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-2.3, 1, 0],
+    "overview": "The electrical machine driven by the engine to produce electrical power, typically a synchronous alternator in a marine generating set.",
+    "mainFunctions": [
+      "Converts shaft power into electrical power.",
+      "Supplies the connected electrical system.",
+      "Works with excitation and control equipment to regulate output voltage."
+    ],
+    "workingPrinciple": "The engine rotates the generator rotor. In a typical synchronous alternator, its magnetic field moves relative to the stator windings and induces AC voltage. Frequency depends on rotational speed and pole count. Excitation regulates voltage, while the engine governor regulates speed and therefore frequency during isolated operation.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -2.3,
+      1,
+      0
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#76a7a0"
   },
   {
     "id": "level-switch",
     "name": "Level switch",
     "modelObjectName": "LevelSwitch",
-    "function": "Monitors a fluid level and provides a status signal.",
-    "location": "Mounted on associated tank or system",
-    "maintenance": "Test operation and inspect electrical connections.",
-    "position": [0, 0, 0],
-    "explodeOffset": [1.8, 0, -1.6],
+    "overview": "A device that signals when liquid reaches a defined level in the monitored vessel or chamber.",
+    "mainFunctions": [
+      "Detects a configured high or low liquid-level condition.",
+      "Provides a discrete signal to the monitoring or control system.",
+      "Supports alarms or interlocks where connected."
+    ],
+    "workingPrinciple": "A float or another sensing method responds when liquid crosses the switch's set level. The device changes its output state for the control system. The screenshot does not establish which liquid is monitored or whether the output triggers an alarm, pump control or shutdown.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      1.8,
+      0,
+      -1.6
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#bd9263"
   },
   {
     "id": "lo-priming-pump",
     "name": "LO priming pump",
     "modelObjectName": "LOPrimmingPump",
-    "function": "Supplies lubricating oil before or during engine operation.",
-    "location": "Lubrication system",
-    "maintenance": "Inspect pump condition, connections and priming flow.",
-    "position": [0, 0, 0],
-    "explodeOffset": [2.5, 0.4, 1.5],
+    "overview": "An auxiliary lubricating-oil pump used to establish oil circulation before the engine's normal running lubrication supply is available.",
+    "mainFunctions": [
+      "Supplies pre-lubrication before starting.",
+      "Establishes oil flow to specified bearings and passages.",
+      "Provides standby or post-lubrication only where the system is designed for it."
+    ],
+    "workingPrinciple": "The priming pump circulates oil through the designated lubrication circuit before engine start. A pressure switch or sensor may confirm the required pre-lubrication condition. Its operation after starting or stopping depends on the control logic and must be verified from the manual.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      2.5,
+      0.4,
+      1.5
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#8b7b9d"
   },
   {
     "id": "turning-device",
     "name": "Turning device",
     "modelObjectName": "TurningDevice",
-    "function": "Rotates the engine slowly for maintenance and preparation.",
-    "location": "Flywheel end",
-    "maintenance": "Verify interlock and gear engagement before use.",
-    "position": [0, 0, 0],
-    "explodeOffset": [-1, 0.4, -1.5],
+    "overview": "A mechanism that rotates the engine slowly for inspection, positioning and approved maintenance procedures.",
+    "mainFunctions": [
+      "Positions the crankshaft and pistons for servicing.",
+      "Allows controlled slow rotation during inspection.",
+      "Provides an engagement-status input for the starting interlock where fitted."
+    ],
+    "workingPrinciple": "A manual or motor-driven reduction mechanism engages a flywheel gear or another turning interface. It rotates the crankshaft at low speed without combustion. The engine starting system should be inhibited while the device is engaged; the actual interlock arrangement must follow the engine design.",
+    "position": [
+      0,
+      0,
+      0
+    ],
+    "explodeOffset": [
+      -1,
+      0.4,
+      -1.5
+    ],
     "shape": "",
-    "size": [1, 1, 1],
+    "size": [
+      1,
+      1,
+      1
+    ],
     "color": "#ba8f61"
   }
 ]

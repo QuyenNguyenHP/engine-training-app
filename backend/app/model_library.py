@@ -31,6 +31,8 @@ def catalogue():
                 raise ValueError()
             if item["id"] in ids or Path(item["file"]).suffix.lower() not in {".glb", ".gltf", ".stl"}:
                 raise ValueError()
+            if "overview" in item and not isinstance(item["overview"], str):
+                raise ValueError()
             ids.add(item["id"])
             item["available"] = resolve_file(item["file"]).is_file()
             item["url"] = "/api/v1/model-files/" + quote(item["file"], safe="/")

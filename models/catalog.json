@@ -1,9 +1,10 @@
 {
-  "active": "lubricating-oil-system",
+  "active": "engine-overview",
   "models": [
     {
       "id": "engine-overview",
       "name": "Engine Overview",
+      "overview": "A general introduction to the complete engine assembly and the relationship between its main systems. Detailed model information will be added here.",
       "file": "library/engine-overview/EngineOverview.glb",
       "components": "library/engine-overview/components.json",
       "camera": {
@@ -14,6 +15,7 @@
     {
       "id": "turbo-charger",
       "name": "Turbocharger",
+      "overview": "A general introduction to the turbocharger assembly and its role in supplying compressed air to the engine. Detailed model information will be added here.",
       "file": "library/turbo-charger/TurboCharger.glb",
       "components": "library/turbo-charger/components.json",
       "camera": {
@@ -24,6 +26,7 @@
     {
       "id": "lubricating-oil-system",
       "name": "Lubricating Oil System",
+      "overview": "A general introduction to the lubricating oil system and how it supplies, circulates, and controls oil throughout the engine. Detailed model information will be added here.",
       "file": "library/lubricating-oil-system/LubricatingOilSystem.glb",
       "components": "library/lubricating-oil-system/components.json",
       "camera": {
@@ -34,6 +37,7 @@
     {
       "id": "rotating-system",
       "name": "Rotating System",
+      "overview": "A general introduction to the rotating system and the components that convert combustion force into rotary motion. Detailed model information will be added here.",
       "file": "library/rotating-system/RotatingSystem.glb",
       "components": "library/rotating-system/components.json",
       "camera": {
@@ -44,6 +48,7 @@
     {
       "id": "cylinder-head",
       "name": "Cylinder Head",
+      "overview": "A general introduction to the cylinder head assembly and the components involved in combustion, gas exchange, and sealing. Detailed model information will be added here.",
       "file": "library/cylinder-head/CylinderHead.glb",
       "components": "library/cylinder-head/components.json",
       "camera": {
@@ -54,6 +59,7 @@
     {
       "id": "generator-common-bed",
       "name": "Generator and Common Bed",
+      "overview": "A general introduction to the generator, common bed, and their role in supporting and aligning the complete machinery arrangement. Detailed model information will be added here.",
       "file": "library/generator-common-bed/Generator&CommonBed.glb",
       "components": "library/generator-common-bed/components.json",
       "camera": {

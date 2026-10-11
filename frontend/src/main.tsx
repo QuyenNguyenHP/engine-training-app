@@ -7,7 +7,7 @@ import { Part, useViewer } from './store';
 import drumsLogo from '../DRUMS_logo.png';
 import './style.css';
 
-type Model = { id: string; name: string; available: boolean };
+type Model = { id: string; name: string; overview?: string; available: boolean };
 type CameraPreset = { position: [number, number, number]; target: [number, number, number] };
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
   const s = useViewer();
   const selected = parts.find((part) => part.id === s.selected);
   const hiddenParts = parts.filter((part) => s.hidden.includes(part.id));
+  const activeModel = models.find((model) => model.id === modelId);
 
   useEffect(() => {
     fetch('/api/v1/models')
@@ -70,7 +71,7 @@ function App() {
     {error ? <div role="alert" className="error">{error}<button onClick={() => location.reload()}>Retry</button></div> : <main>
       <ModelComponents parts={parts} models={models} modelId={modelId} onModelChange={setModelId} />
       <ModelViewport parts={parts} url={url} mode={mode} modelName={modelName} cameraPreset={cameraPreset} />
-      <ComponentDetails selected={selected} />
+      <ComponentDetails selected={selected} modelName={activeModel?.name || modelName} modelOverview={activeModel?.overview} />
     </main>}
     <footer><div>{hiddenParts.length > 0 && <button onClick={s.showAll}>Show all</button>}</div><div><button disabled={!parts.length} onClick={() => navigate(-1)}>← Previous</button><button disabled={!parts.length} onClick={() => navigate(1)}>Next component →</button></div></footer>
     <p className="disclaimer">Illustrative training model. Follow the engine manufacturer’s documentation for actual maintenance procedures.</p>

@@ -40,10 +40,14 @@ Refresh trình duyệt sau khi đổi catalogue. Không cần rebuild vì thư m
 {
   "id": "new-model",
   "name": "New Model",
+  "overview": "General introduction shown before a component is selected.",
   "file": "library/new-model/model.glb",
   "components": "library/new-model/components.json"
 }
 ```
+
+Nội dung `overview` được hiển thị ở bảng thông tin khi chưa chọn component. Có thể cập
+nhật trường này bất kỳ lúc nào để bổ sung phần giới thiệu chi tiết cho từng model.
 
 4. Đổi `active` thành `new-model` khi muốn hiển thị model đó.
 
