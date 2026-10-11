@@ -47,7 +47,7 @@ The backend reads `models/catalog.json`, validates component manifests, serves l
 | Nginx | Serves the built frontend and proxies `/api/` to FastAPI |
 | Python container | Python 3.12 Slim |
 
-The frontend is exposed at `http://localhost:8088`. Inside Docker, Nginx proxies API requests to the backend on port `8000`.
+The frontend is exposed at `http://localhost:9900`. Inside Docker, Nginx proxies API requests to the backend on port `8000`.
 
 ## Development Commands
 

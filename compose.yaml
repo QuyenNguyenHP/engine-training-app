@@ -1,7 +1,7 @@
 services:
   frontend:
     build: ./frontend
-    ports: ["127.0.0.1:8088:80"]
+    ports: ["127.0.0.1:9900:80"]
     depends_on: [backend]
   backend:
     build: ./backend

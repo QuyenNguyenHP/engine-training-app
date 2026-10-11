@@ -1,6 +1,6 @@
 # Public deployment
 
-The Docker application binds only to `127.0.0.1:8088`. Apache proxies the
+The Docker application binds only to `127.0.0.1:9900`. Apache proxies the
 public domain to that local port, so the container is not exposed directly.
 
 DNS for `3d.dqtech.cloud` must point to this server before certificate issuance.
