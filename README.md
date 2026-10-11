@@ -15,8 +15,8 @@ Browser :5173
     v
 FastAPI :8000
     |
-    +-- SQLite
-    +-- models/
+    +-- models/catalog.json
+    +-- models/library/*/components.json
 ```
 
 ### Production deployment
@@ -34,12 +34,12 @@ Frontend container (Nginx) 127.0.0.1:9900
     v                         |
 Backend container :8000 <----+
     |
-    +-- PostgreSQL container
-    +-- read-only models/ mount
+    +-- models/catalog.json
+    +-- read-only models/library/ mount
 ```
 
 Only Apache2 is public. Docker publishes the frontend on the server loopback
-interface, and the backend and database remain inside the Docker network.
+interface, while the backend remains inside the Docker network.
 
 ## Requirements
 
@@ -60,8 +60,8 @@ For Docker deployment:
 
 ## Run locally with a terminal
 
-The backend and frontend run in separate terminals. Local development uses
-SQLite, so PostgreSQL is not required.
+The backend and frontend run in separate terminals. All model and component
+metadata is read directly from JSON, so no database is required.
 
 ### Windows PowerShell
 
@@ -133,7 +133,7 @@ Open:
 Follow the service logs:
 
 ```bash
-docker compose logs -f frontend backend db
+docker compose logs -f frontend backend
 ```
 
 Stop the application:
@@ -142,8 +142,8 @@ Stop the application:
 docker compose down
 ```
 
-`docker compose down` preserves the PostgreSQL and asset volumes. Do not add
-`-v` unless you intentionally want to delete the stored Docker data.
+`docker compose down` preserves the optional asset-storage volume. Do not add
+`-v` unless you intentionally want to delete stored Docker volume data.
 
 The optional MinIO service is not required for models stored in `models/`. To
 start it for S3-compatible asset development:
@@ -154,13 +154,14 @@ docker compose --profile assets up -d storage
 
 > **Port note:** The project uses host port `9900` for the frontend. The
 > container still listens on port `80`. If the host port is changed again,
-> update both `compose.yaml` and `deploy/apache/3d.dqtech.cloud.conf`.
+> update both `compose.yaml` and Apache's installed virtual-host file at
+> `/etc/apache2/sites-available/3d.dqtech.cloud.conf`.
 
 ## Deploy `3d.dqtech.cloud` with Docker and Apache2
 
-These instructions target Ubuntu or Debian. The repository's deployment script
-expects the project at `/home/dq/engine-training-app`. If the project is stored
-elsewhere, update `project_dir` in `deploy/public.sh` first.
+These instructions target Ubuntu or Debian and assume the project is located at
+`/home/dq/engine-training-app`. Replace that path in the commands if the project
+is stored elsewhere.
 
 ### 1. Configure DNS
 
@@ -204,7 +205,7 @@ sudo ufw allow 'Apache Full'
 sudo ufw status
 ```
 
-### 3. Build and start the frontend, backend and database
+### 3. Build and start the frontend and backend
 
 ```bash
 cd /home/dq/engine-training-app
@@ -223,21 +224,42 @@ The Compose stack starts:
 
 - `frontend`: builds React and serves it with Nginx on `127.0.0.1:9900`.
 - `backend`: runs FastAPI on the private Docker network.
-- `db`: runs PostgreSQL with a persistent named volume.
 - `storage`: optional MinIO service enabled only through the `assets` profile.
 
-Before a production launch, replace the example database and storage credentials
-in `compose.yaml` with private values. Do not publish the backend, PostgreSQL or
-MinIO ports directly to the internet.
+Component and model metadata is loaded from the JSON files mounted from
+`models/`; there is no application database. If optional MinIO storage is used,
+replace its example credentials with private values. Do not publish the backend
+or MinIO ports directly to the internet.
 
 ### 4. Enable the Apache virtual host
 
-The repository includes `deploy/apache/3d.dqtech.cloud.conf`, which proxies the
-domain to the loopback-only frontend container.
+Create the Apache virtual-host file directly on the server:
 
 ```bash
-cd /home/dq/engine-training-app
-sudo install -m 644 deploy/apache/3d.dqtech.cloud.conf /etc/apache2/sites-available/3d.dqtech.cloud.conf
+sudo nano /etc/apache2/sites-available/3d.dqtech.cloud.conf
+```
+
+Paste the following configuration, then save and close the file:
+
+```apache
+<VirtualHost *:80>
+    ServerName 3d.dqtech.cloud
+
+    ProxyPreserveHost On
+    ProxyRequests Off
+    RequestHeader set X-Forwarded-Proto "http"
+
+    ProxyPass / http://127.0.0.1:9900/ connectiontimeout=5 timeout=300
+    ProxyPassReverse / http://127.0.0.1:9900/
+
+    ErrorLog ${APACHE_LOG_DIR}/3d.dqtech.cloud_error.log
+    CustomLog ${APACHE_LOG_DIR}/3d.dqtech.cloud_access.log combined
+</VirtualHost>
+```
+
+Enable and validate the site:
+
+```bash
 sudo a2ensite 3d.dqtech.cloud.conf
 sudo apache2ctl configtest
 sudo systemctl reload apache2
@@ -266,21 +288,6 @@ curl --fail https://3d.dqtech.cloud/api/v1/health
 
 The application is then available at https://3d.dqtech.cloud.
 
-### Optional deployment script
-
-After DNS, Docker and Apache prerequisites are ready, the included script can
-perform the Docker build, install the Apache virtual host, request the
-certificate and run the health check:
-
-```bash
-cd /home/dq/engine-training-app
-bash deploy/public.sh
-```
-
-For a server's first Certbot registration, the manual Certbot command above is
-recommended because it allows you to provide the certificate notification email
-and confirm the redirect options.
-
 ## Update an existing deployment
 
 After pulling or copying new source code to the server:
@@ -308,7 +315,7 @@ Check containers and logs:
 ```bash
 cd /home/dq/engine-training-app
 docker compose ps
-docker compose logs --tail=200 frontend backend db
+docker compose logs --tail=200 frontend backend
 ```
 
 Check Apache:

@@ -39,6 +39,14 @@ This file records notable development work, decisions, validation and follow-up 
 - Ran the backend unit test successfully after the catalogue and metadata changes.
 - Frontend build validation was not available because npm was not installed in the active Windows or WSL environment.
 
+### Backend simplification
+
+- Removed PostgreSQL, SQLite, SQLAlchemy and Psycopg from the application runtime.
+- Changed the backend to load the catalogue and all component learning content exclusively from JSON under `models/`.
+- Removed the database service, dependency and persistent PostgreSQL volume from Docker Compose.
+- Made the health endpoint stateless and updated architecture, technology-stack and deployment documentation accordingly.
+- Validated the simplified Compose configuration and reran the backend unit test successfully.
+
 ## 2026-09-28
 
 ### Model library

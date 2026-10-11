@@ -24,25 +24,22 @@ The frontend supports GLB/glTF and STL models. It provides component selection, 
 | Python | 3.12 | Backend runtime |
 | FastAPI | 0.115.12 | HTTP API |
 | Uvicorn | 0.34.2 | ASGI application server |
-| SQLAlchemy | 2.0.40 | Database access and local seed data |
-| Psycopg | 3.2.6 | PostgreSQL driver |
 | Boto3 | 1.37.38 | S3-compatible object storage integration |
 
 The backend reads `models/catalog.json`, validates component manifests, serves local model files and exposes the model catalogue through `/api/v1` endpoints.
 
 ## Data and Storage
 
-- PostgreSQL 16 Alpine is the main database in Docker Compose.
-- SQLite is the backend fallback for native local development.
+- Model and component metadata is stored entirely as JSON under `models/`.
 - MinIO is available through the optional `assets` Docker Compose profile for S3-compatible storage.
-- Production model metadata is stored as JSON under `models/library/<model-id>/`.
+- Each component manifest is stored under `models/library/<model-id>/components.json`.
 - Model assets use GLB/glTF by preference, with STL supported for single-part imports.
 
 ## Infrastructure
 
 | Technology | Configuration |
 | --- | --- |
-| Docker Compose | Coordinates frontend, backend, PostgreSQL and optional MinIO services |
+| Docker Compose | Coordinates frontend, backend and optional MinIO services |
 | Node.js | Node 22 Alpine build image |
 | Nginx | Serves the built frontend and proxies `/api/` to FastAPI |
 | Python container | Python 3.12 Slim |
@@ -80,7 +77,7 @@ The frontend build runs TypeScript validation before creating the Vite productio
 - `frontend/src/Viewer.tsx`: Three.js scene, model interaction and camera controls.
 - `frontend/src/store.ts`: shared viewer state and actions.
 - `frontend/src/style.css`: responsive application styling.
-- `backend/app/main.py`: API application and database setup.
+- `backend/app/main.py`: stateless API application.
 - `backend/app/model_library.py`: model catalogue, manifest validation and asset serving.
 - `models/catalog.json`: available models and camera presets.
 - `models/library/`: GLB assets and component manifests.
