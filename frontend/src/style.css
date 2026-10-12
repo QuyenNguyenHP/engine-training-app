@@ -448,6 +448,33 @@ button: focus-visible,input:focus-visible {
   padding: 24px;
 }
 
+.information-language {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.information-language select {
+  min-width: 130px;
+  padding: 8px 10px;
+  border: 1px solid #4f697b;
+  border-radius: 6px;
+  background: #11202e;
+  color: #e6eef5;
+  font: inherit;
+}
+
+.information-language select:focus-visible {
+  outline: 2px solid #61d6bc;
+  outline-offset: 2px;
+}
+
+.component-details-label {
+  margin-top: 24px;
+}
+
 .category {
   display: inline-block;
   margin-top: 25px;

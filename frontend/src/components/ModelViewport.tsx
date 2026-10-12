@@ -17,6 +17,21 @@ export function ModelViewport({ parts, url, mode, modelName, cameraPreset }: Mod
   const viewportRef = useRef<HTMLDivElement>(null);
   const viewer = useViewer();
   const selected = parts.find((part) => part.id === viewer.selected);
+  const vietnamese = viewer.language === 'vi';
+  const displayedPart = selected && vietnamese && selected.overviewVi ? {
+    ...selected,
+    name: selected.nameVi || selected.name,
+    overview: selected.overviewVi,
+    mainFunctions: selected.mainFunctionsVi,
+    workingPrinciple: selected.workingPrincipleVi,
+  } : selected;
+  const systemTranslations: Record<string, string> = {
+    Turbocharger: 'Bộ tăng áp',
+    'Lubricating oil system': 'Hệ thống dầu bôi trơn',
+  };
+  const displayedSystem = vietnamese && selected?.system
+    ? (systemTranslations[selected.system] || selected.system)
+    : selected?.system;
 
   useEffect(() => {
     const syncFullscreen = () => {
@@ -43,7 +58,7 @@ export function ModelViewport({ parts, url, mode, modelName, cameraPreset }: Mod
     </div>
     <button className="fullscreen-toggle" onClick={toggleFullscreen}>{isFullscreen ? 'Exit full screen' : 'Full screen'}</button>
     <div className="canvas-shell" onPointerDown={() => viewer.setAutoRotate(false)}>{parts.length ? <Viewer parts={parts} url={url} mode={mode} cameraPreset={cameraPreset} /> : <p className="loading">Loading components…</p>}</div>
-    {isFullscreen && selected && <article className="fullscreen-info" onClick={(event) => event.stopPropagation()}><button className="popup-close" aria-label="Close component information" onClick={() => viewer.select(null)}>×</button>{selected.system && <p className="eyebrow">{selected.system}</p>}<h2>{selected.name}</h2>{selected.overview ? <><h3 className="detail-heading detail-heading--overview">Overview</h3><p>{selected.overview}</p><h3 className="detail-heading detail-heading--functions">Main Functions</h3><ul className="main-functions">{selected.mainFunctions?.map((item) => <li key={item}>{item}</li>)}</ul><h3 className="detail-heading detail-heading--principle">Working Principle</h3><p>{selected.workingPrinciple}</p></> : <><h3>Function</h3><p>{selected.function}</p><h3>Location</h3><p>{selected.location}</p></>}</article>}
+    {isFullscreen && displayedPart && <article className="fullscreen-info" lang={viewer.language} onClick={(event) => event.stopPropagation()}><button className="popup-close" aria-label={vietnamese ? 'Đóng thông tin bộ phận' : 'Close component information'} onClick={() => viewer.select(null)}>×</button>{displayedSystem && <p className="eyebrow">{displayedSystem}</p>}<h2>{displayedPart.name}</h2>{displayedPart.overview ? <><h3 className="detail-heading detail-heading--overview">{vietnamese ? 'Tổng quan' : 'Overview'}</h3><p>{displayedPart.overview}</p><h3 className="detail-heading detail-heading--functions">{vietnamese ? 'Chức năng chính' : 'Main Functions'}</h3><ul className="main-functions">{displayedPart.mainFunctions?.map((item) => <li key={item}>{item}</li>)}</ul><h3 className="detail-heading detail-heading--principle">{vietnamese ? 'Nguyên lý hoạt động' : 'Working Principle'}</h3><p>{displayedPart.workingPrinciple}</p></> : <><h3>{vietnamese ? 'Chức năng' : 'Function'}</h3><p>{displayedPart.function}</p><h3>{vietnamese ? 'Vị trí' : 'Location'}</h3><p>{displayedPart.location}</p></>}</article>}
     <div className="view-help">Drag to rotate · Scroll to zoom · Right-drag to pan</div>
   </div>;
 }

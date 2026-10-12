@@ -27,7 +27,15 @@
       1,
       1
     ],
-    "color": "#b69252"
+    "color": "#b69252",
+    "nameVi": "Bộ lọc dầu ly tâm",
+    "overviewVi": "Thiết bị tách cặn bẩn khỏi dầu bằng rô-to quay nhanh.",
+    "mainFunctionsVi": [
+      "Loại bỏ hạt rắn và bùn dầu",
+      "bổ trợ lọc chính",
+      "giảm mài mòn."
+    ],
+    "workingPrincipleVi": "Dầu đi vào rô-to quay; hạt nặng bị đẩy về thành ngoài và tích tụ, dầu sạch thoát ra. Cần xác nhận đường dầu theo sơ đồ."
   },
   {
     "id": "automatic-backwash-filter",
@@ -57,7 +65,15 @@
       1,
       1
     ],
-    "color": "#c3a064"
+    "color": "#c3a064",
+    "nameVi": "Bộ lọc tự rửa ngược",
+    "overviewVi": "Bộ lọc có khả năng tự làm sạch phần tử lọc bằng dòng chảy ngược.",
+    "mainFunctionsVi": [
+      "Giữ lại tạp chất",
+      "tự làm sạch khi vận hành",
+      "duy trì lưu lượng dầu qua các phần tử còn hoạt động."
+    ],
+    "workingPrincipleVi": "Khi đến chu kỳ hoặc chênh áp đạt ngưỡng, một phần tử được rửa bằng dòng ngược để đẩy cặn ra đường xả rửa."
   },
   {
     "id": "oil-filter-fitting",
@@ -87,7 +103,15 @@
       1,
       1
     ],
-    "color": "#9d855e"
+    "color": "#9d855e",
+    "nameVi": "Đầu nối bộ lọc dầu bôi trơn",
+    "overviewVi": "Chi tiết kết nối hoặc gá lắp bộ lọc vào mạch dầu.",
+    "mainFunctionsVi": [
+      "Liên kết đường dầu vào/ra",
+      "cố định bộ lọc",
+      "bảo đảm độ kín."
+    ],
+    "workingPrincipleVi": "Dầu có áp suất đi qua các đường nối. Gioăng và mối ghép ngăn rò rỉ; không giả định có van bypass nếu chưa xác minh."
   },
   {
     "id": "lubricating-oil-pump",
@@ -117,7 +141,15 @@
       1,
       1
     ],
-    "color": "#c28b55"
+    "color": "#c28b55",
+    "nameVi": "Bơm dầu bôi trơn",
+    "overviewVi": "Bơm tạo dòng tuần hoàn dầu tới các bề mặt cần bôi trơn.",
+    "mainFunctionsVi": [
+      "Cấp dầu cho ổ đỡ",
+      "tuần hoàn qua thiết bị lọc/làm mát",
+      "hỗ trợ tản nhiệt."
+    ],
+    "workingPrincipleVi": "Bơm hút dầu từ cácte hoặc két chứa và đẩy vào mạch. Trở lực tạo áp suất, còn van điều áp hoặc an toàn giới hạn áp suất quá cao."
   },
   {
     "id": "lubricating-oil-pump-piping",
@@ -147,7 +179,15 @@
       1,
       1
     ],
-    "color": "#8b765a"
+    "color": "#8b765a",
+    "nameVi": "Đường ống bơm dầu bôi trơn",
+    "overviewVi": "Các đường ống hút và đẩy nối bơm với hệ thống dầu.",
+    "mainFunctionsVi": [
+      "Dẫn dầu đến cửa hút",
+      "đưa dầu đến thiết bị phía sau",
+      "bảo đảm kết nối kín."
+    ],
+    "workingPrincipleVi": "Chênh áp do bơm tạo ra làm dầu chuyển động. Thứ tự bơm, lọc, làm mát phải kiểm tra theo sơ đồ thực tế."
   },
   {
     "id": "lubricating-oil-thermostatic-valve",
@@ -177,7 +217,15 @@
       1,
       1
     ],
-    "color": "#a9834f"
+    "color": "#a9834f",
+    "nameVi": "Van điều nhiệt dầu bôi trơn",
+    "overviewVi": "Van điều chỉnh lượng dầu qua bộ làm mát và nhánh đi tắt theo nhiệt độ.",
+    "mainFunctionsVi": [
+      "Ổn định nhiệt độ dầu",
+      "tránh làm mát quá mức lúc khởi động",
+      "phân chia lưu lượng."
+    ],
+    "workingPrincipleVi": "Phần tử cảm nhiệt thay đổi vị trí van để điều chỉnh tỷ lệ dầu qua két làm mát và đường bypass; van không trực tiếp điều chỉnh áp suất dầu."
   },
   {
     "id": "plate-heat-exchanger",
@@ -207,6 +255,14 @@
       1,
       1
     ],
-    "color": "#718da5"
+    "color": "#718da5",
+    "nameVi": "Bộ trao đổi nhiệt dạng tấm",
+    "overviewVi": "Thiết bị truyền nhiệt giữa dầu nóng và chất làm mát qua các tấm mỏng.",
+    "mainFunctionsVi": [
+      "Làm mát dầu",
+      "giữ hai lưu chất tách biệt",
+      "tăng diện tích truyền nhiệt."
+    ],
+    "workingPrincipleVi": "Dầu và chất làm mát chảy trong các kênh riêng ở hai mặt tấm; nhiệt truyền qua tấm mà không trộn lẫn hai dòng."
   }
 ]

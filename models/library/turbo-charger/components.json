@@ -27,7 +27,15 @@
       1,
       1
     ],
-    "color": "#809aa4"
+    "color": "#809aa4",
+    "nameVi": "Vỏ ổ đỡ",
+    "overviewVi": "Thân giữa của bộ tăng áp, chứa các ổ đỡ trục nối bánh tua-bin và bánh máy nén.",
+    "mainFunctionsVi": [
+      "Đỡ và định vị cụm rô-to",
+      "giữ đồng tâm giữa tua-bin và máy nén",
+      "bố trí đường dầu bôi trơn và bộ phận làm kín."
+    ],
+    "workingPrincipleVi": "Trục chung quay trong các ổ đỡ được bôi trơn nhằm giảm ma sát và tản nhiệt. Kết cấu ổ đỡ và làm kín tùy thiết kế."
   },
   {
     "id": "compressor-casing",
@@ -57,7 +65,15 @@
       1,
       1
     ],
-    "color": "#6f9fc1"
+    "color": "#6f9fc1",
+    "nameVi": "Vỏ máy nén",
+    "overviewVi": "Vỏ cố định bao quanh bánh công tác và các đường dẫn khí của máy nén.",
+    "mainFunctionsVi": [
+      "Dẫn hướng luồng khí",
+      "thu gom khí nén",
+      "hỗ trợ chuyển động năng thành áp năng."
+    ],
+    "workingPrincipleVi": "Bánh máy nén tăng năng lượng cho không khí. Bộ khuếch tán và vỏ làm giảm vận tốc để tăng áp suất, sau đó đưa khí tới hệ thống nạp."
   },
   {
     "id": "cover",
@@ -87,7 +103,15 @@
       1,
       1
     ],
-    "color": "#889bab"
+    "color": "#889bab",
+    "nameVi": "Nắp bộ tăng áp",
+    "overviewVi": "Nắp bảo vệ hoặc che kín một vị trí trên bộ tăng áp; chức năng cụ thể phụ thuộc vị trí lắp.",
+    "mainFunctionsVi": [
+      "Che chắn chi tiết",
+      "hạn chế bụi bẩn hoặc tiếp xúc ngoài ý muốn",
+      "hỗ trợ tiếp cận khi bảo dưỡng."
+    ],
+    "workingPrincipleVi": "Nắp đứng yên trong khi rô-to quay. Cần xác nhận bản vẽ trước khi khẳng định nắp có chức năng giữ áp suất hoặc làm kín dầu."
   },
   {
     "id": "silencer",
@@ -117,7 +141,15 @@
       1,
       1
     ],
-    "color": "#68a89e"
+    "color": "#68a89e",
+    "nameVi": "Bộ giảm âm khí nạp",
+    "overviewVi": "Cụm lắp ở cửa hút máy nén để giảm tiếng ồn.",
+    "mainFunctionsVi": [
+      "Giảm tiếng ồn hút khí",
+      "dẫn khí vào máy nén",
+      "chỉ lọc bụi nếu có phần tử lọc."
+    ],
+    "workingPrincipleVi": "Không khí đi qua các khoang hoặc vật liệu hấp thụ âm trước khi vào máy nén. Bộ giảm âm không mặc nhiên là bộ lọc."
   },
   {
     "id": "turbine-casing",
@@ -147,6 +179,14 @@
       1,
       1
     ],
-    "color": "#b69252"
+    "color": "#b69252",
+    "nameVi": "Vỏ tua-bin",
+    "overviewVi": "Vỏ phía khí xả của bộ tăng áp.",
+    "mainFunctionsVi": [
+      "Dẫn khí xả đến bánh tua-bin",
+      "bao kín dòng khí nóng",
+      "dẫn khí ra cửa xả."
+    ],
+    "workingPrincipleVi": "Khí xả truyền năng lượng cho bánh tua-bin, làm quay trục chung với máy nén. Vỏ đứng yên và chịu nhiệt độ khí xả."
   }
 ]

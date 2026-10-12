@@ -2,6 +2,34 @@
 
 This file records notable development work, decisions, validation and follow-up items by date. Add new entries above older entries.
 
+## 2026-10-12
+
+### Vietnamese component content
+
+- Used `Marine_Engine_Components_Supplement_Vietnamese.md` as the Vietnamese source for the detailed component models.
+- Added `nameVi`, `overviewVi`, `mainFunctionsVi` and `workingPrincipleVi` fields to every component manifest under `models/library/`.
+- Added Vietnamese content for the 10 Engine Overview components so all six manifests use the same bilingual schema.
+- Completed Vietnamese content for all 60 components while preserving the existing English fields, component IDs, GLB object mappings and viewer configuration.
+- Kept identical general Vietnamese descriptions for Connecting rod 1-8 and Piston 1-8, with the numbers retained only in their component names.
+
+### Language selection and interface
+
+- Added an English / Tiếng Việt selector under `MODEL INFORMATION`.
+- Connected the selector to shared viewer state and saved the chosen language in local storage.
+- Updated the Component Details panel to read Vietnamese content directly from the component JSON returned by the API.
+- Added Vietnamese model names, model introductions, section headings, action labels and fallback messages.
+- Updated the fullscreen component-information popup to follow the selected language for component names, system labels, Overview, Main Functions and Working Principle.
+- Kept English fallback behavior for any future component that does not yet contain Vietnamese fields.
+
+### Validation
+
+- Parsed and validated all six component manifests as JSON.
+- Confirmed that all 60 components contain non-empty Vietnamese name, overview, main-functions and working-principle fields.
+- Confirmed that all 7 Cylinder Head components and all 10 Engine Overview components contain complete Vietnamese data.
+- Ran the TypeScript type check successfully.
+- Verified server-rendered Vietnamese component content and the shared selector/fullscreen language bindings.
+- The production Vite build could not be completed in the current environment because the installed frontend dependencies are missing `rollup/parseAst`.
+
 ## 2026-10-11
 
 ### Model information

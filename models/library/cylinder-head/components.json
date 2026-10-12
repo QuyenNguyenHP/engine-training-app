@@ -26,7 +26,15 @@
       1,
       1
     ],
-    "color": "#7895ae"
+    "color": "#7895ae",
+    "nameVi": "Nắp đậy nắp máy",
+    "overviewVi": "Nắp tháo được bao quanh cơ cấu cò mổ và van phía trên nắp xi lanh.",
+    "mainFunctionsVi": [
+      "Bảo vệ cơ cấu phối khí",
+      "giữ dầu bôi trơn",
+      "tạo lối tiếp cận bảo dưỡng."
+    ],
+    "workingPrincipleVi": "Nắp đứng yên và được làm kín bằng gioăng; không phải chi tiết trực tiếp chịu áp suất cháy như nắp xi lanh."
   },
   {
     "id": "cylinder-head-hfo",
@@ -55,7 +63,15 @@
       1,
       1
     ],
-    "color": "#6e8fa9"
+    "color": "#6e8fa9",
+    "nameVi": "Nắp xi lanh HFO",
+    "overviewVi": "Cụm nắp xi lanh có nhãn HFO trên mô hình; HFO thường là dầu nhiên liệu nặng.",
+    "mainFunctionsVi": [
+      "Đóng kín phía trên buồng cháy",
+      "lắp van và vòi phun",
+      "truyền tải trọng và nhiệt vào kết cấu."
+    ],
+    "workingPrincipleVi": "Nắp được bắt chặt lên thân máy. Nhiên liệu phun vào khí nén nóng để cháy; các van điều khiển nạp/xả. Cần kiểm tra ý nghĩa nhãn HFO theo bản vẽ."
   },
   {
     "id": "cylinder-liner",
@@ -84,7 +100,15 @@
       1,
       1
     ],
-    "color": "#76a7a0"
+    "color": "#76a7a0",
+    "nameVi": "Sơ mi xi lanh",
+    "overviewVi": "Ống lót tạo bề mặt làm việc cho piston và xéc-măng.",
+    "mainFunctionsVi": [
+      "Dẫn hướng piston",
+      "cùng các chi tiết khác bao kín áp suất cháy",
+      "truyền nhiệt."
+    ],
+    "workingPrincipleVi": "Piston trượt trong sơ mi trên màng dầu mỏng. Nhiệt truyền qua thành sơ mi tới nước làm mát hoặc kết cấu xung quanh."
   },
   {
     "id": "in-ex-tappet",
@@ -113,7 +137,15 @@
       1,
       1
     ],
-    "color": "#bd9263"
+    "color": "#bd9263",
+    "nameVi": "Con đội van nạp và xả",
+    "overviewVi": "Chi tiết tiếp xúc cam, truyền chuyển động tới cơ cấu van.",
+    "mainFunctionsVi": [
+      "Bám theo biên dạng cam",
+      "truyền chuyển động",
+      "hỗ trợ tạo quy luật nâng van."
+    ],
+    "workingPrincipleVi": "Vấu cam đẩy con đội và cơ cấu liên kết để mở van; lò xo đưa van về vị trí đóng khi vấu cam đi qua."
   },
   {
     "id": "indicator-valve",
@@ -142,7 +174,15 @@
       1,
       1
     ],
-    "color": "#8b7b9d"
+    "color": "#8b7b9d",
+    "nameVi": "Van chỉ thị áp suất xi lanh",
+    "overviewVi": "Van nhỏ dùng để kết nối đường đo áp suất buồng cháy.",
+    "mainFunctionsVi": [
+      "Cho phép lắp thiết bị đo áp suất",
+      "cách ly đường đo",
+      "hỗ trợ quy trình kiểm tra được phép."
+    ],
+    "workingPrincipleVi": "Khi đóng, van cách ly áp suất trong xi lanh. Khi mở đúng quy trình, khí thông tới thiết bị đo hoặc đường xả cho phép; không phải van an toàn thông thường."
   },
   {
     "id": "intake-exhaust-valve",
@@ -171,7 +211,15 @@
       1,
       1
     ],
-    "color": "#ba8f61"
+    "color": "#ba8f61",
+    "nameVi": "Van nạp và van xả",
+    "overviewVi": "Các van điều khiển khí nạp vào và khí cháy thoát khỏi xi lanh.",
+    "mainFunctionsVi": [
+      "Cho khí mới đi vào",
+      "thải khí cháy",
+      "làm kín trong kỳ nén và sinh công."
+    ],
+    "workingPrincipleVi": "Cơ cấu phối khí mở van theo thời điểm thiết kế; lò xo thường đóng van về đế. Thời điểm mở/đóng có thể có góc sớm, muộn và trùng điệp."
   },
   {
     "id": "valve-rocker-arm",
@@ -200,6 +248,14 @@
       1,
       1
     ],
-    "color": "#809aa4"
+    "color": "#809aa4",
+    "nameVi": "Cò mổ van",
+    "overviewVi": "Đòn bẩy quay quanh trục để truyền lực tới thân van hoặc cầu van.",
+    "mainFunctionsVi": [
+      "Truyền và đổi hướng chuyển động",
+      "tạo tỷ số đòn bẩy",
+      "hỗ trợ chỉnh khe hở nếu thiết kế cho phép."
+    ],
+    "workingPrincipleVi": "Chuyển động từ cam làm cò mổ quay, đầu còn lại ấn mở van chống lại lực lò xo; khi lực giảm, lò xo đóng van."
   }
 ]

@@ -11,6 +11,15 @@
       "Provide accessible interfaces for installation, inspection, and maintenance."
     ],
     "workingPrinciple": "The diesel engine drives the generator rotor through a shaft coupling. As the rotor's magnetic field rotates relative to the stator windings, an alternating voltage is induced. The excitation and voltage-regulation system controls the generator's output voltage, while engine speed and the number of generator poles determine electrical frequency. The common bed supports both machines and transfers their weight and dynamic reactions to the foundation or resilient mounts.",
+    "nameVi": "Cụm máy phát điện và bệ chung",
+    "overviewVi": "Cụm máy phát điện và bệ chung gồm máy phát điện xoay chiều, khung bệ dùng chung, khớp nối và các vị trí lắp đặt. Cụm này nâng đỡ tổ máy và giúp duy trì độ đồng tâm giữa động cơ diesel với máy phát điện.",
+    "mainFunctionsVi": [
+      "Biến công suất cơ học của động cơ thành điện năng thông qua máy phát điện.",
+      "Nâng đỡ và định vị động cơ cùng máy phát điện trên một bệ kết cấu chung.",
+      "Duy trì độ đồng tâm của khớp nối và truyền tải trọng vận hành tới hệ thống gối đỡ.",
+      "Cung cấp các vị trí thuận tiện cho lắp đặt, kiểm tra và bảo dưỡng."
+    ],
+    "workingPrincipleVi": "Động cơ diesel dẫn động rôto máy phát qua khớp nối trục. Khi từ trường rôto quay tương đối với các cuộn dây stato, điện áp xoay chiều được cảm ứng. Hệ thống kích từ và điều chỉnh điện áp kiểm soát điện áp đầu ra, còn tốc độ động cơ và số cực máy phát quyết định tần số điện. Bệ chung nâng đỡ cả hai máy và truyền trọng lượng cùng phản lực động xuống nền móng hoặc các gối đỡ đàn hồi.",
     "position": [0, 0, 0],
     "explodeOffset": [-2, -0.5, 0],
     "shape": "",
@@ -29,6 +38,15 @@
       "Transfer rejected heat to a cooler or central cooling circuit."
     ],
     "workingPrinciple": "A circulation pump moves treated freshwater through engine jackets and cooling passages. As the water absorbs heat, its temperature rises. A thermostatic or temperature-control valve regulates the route or proportion of flow through a heat exchanger and bypass to maintain the target temperature. Cooled water returns to the engine. Expansion, venting, and pressure-control arrangements accommodate temperature changes and prevent air accumulation; the exact flow route is engine-specific.",
+    "nameVi": "Hệ thống tuần hoàn nước làm mát áo máy",
+    "overviewVi": "Hệ thống tuần hoàn nước làm mát áo máy đưa nước đã xử lý qua các đường làm mát của động cơ để kiểm soát nhiệt độ sơ mi xi lanh, nắp xi lanh và các bộ phận liên quan.",
+    "mainFunctionsVi": [
+      "Tản nhiệt khỏi các bộ phận động cơ chịu nhiệt độ cháy.",
+      "Duy trì nhiệt độ vận hành phù hợp và giảm ứng suất nhiệt.",
+      "Giúp duy trì khe hở kích thước và hiệu quả của dầu bôi trơn.",
+      "Truyền nhiệt thải tới bộ làm mát hoặc mạch làm mát trung tâm."
+    ],
+    "workingPrincipleVi": "Bơm tuần hoàn đưa nước ngọt đã xử lý qua áo nước và các đường làm mát của động cơ. Nước hấp thụ nhiệt và tăng nhiệt độ. Van điều nhiệt hoặc van điều khiển nhiệt độ điều chỉnh đường đi hay tỷ lệ dòng nước qua bộ trao đổi nhiệt và đường bypass để duy trì nhiệt độ yêu cầu. Nước đã làm mát quay lại động cơ. Các cơ cấu giãn nở, thoát khí và điều khiển áp suất thích ứng với thay đổi nhiệt độ và ngăn tích tụ không khí; đường tuần hoàn cụ thể phụ thuộc vào thiết kế động cơ.",
     "position": [0, 0, 0],
     "explodeOffset": [1.8, 1, 0.8],
     "shape": "",
@@ -47,6 +65,15 @@
       "Supply clean oil at the pressure and temperature required by the engine."
     ],
     "workingPrinciple": "An engine-driven or electrically driven pump draws oil from the sump or supply tank and delivers it through filters and an oil cooler to the main oil gallery. Oil flows to main bearings, crankshaft drillings, connecting-rod bearings, and other lubrication points according to engine design. After lubricating and cooling the components, oil drains back to the sump for recirculation. Pressure-regulating and bypass valves protect the circuit; differential-pressure indicators may reveal filter restriction.",
+    "nameVi": "Hệ thống cấp, làm mát và lọc dầu bôi trơn",
+    "overviewVi": "Hệ thống này chứa, bơm, lọc, làm mát và phân phối dầu bôi trơn tới các ổ đỡ cùng những bộ phận khác cần bôi trơn trong động cơ.",
+    "mainFunctionsVi": [
+      "Tạo màng dầu bảo vệ giữa các bề mặt chuyển động.",
+      "Giảm ma sát, mài mòn và nguy cơ bó kẹt.",
+      "Mang nhiệt và tạp chất ra khỏi các bộ phận được bôi trơn.",
+      "Cấp dầu sạch ở áp suất và nhiệt độ cần thiết cho động cơ."
+    ],
+    "workingPrincipleVi": "Bơm do động cơ hoặc động cơ điện dẫn động hút dầu từ cácte hay két cấp rồi đưa qua bộ lọc và bộ làm mát tới đường dầu chính. Dầu chảy tới ổ đỡ chính, các lỗ dầu trong trục khuỷu, ổ đỡ thanh truyền và các điểm bôi trơn khác theo thiết kế động cơ. Sau khi bôi trơn và làm mát, dầu chảy về cácte để tuần hoàn lại. Van điều áp và van bypass bảo vệ mạch; bộ chỉ báo chênh áp có thể báo tình trạng bộ lọc bị tắc.",
     "position": [0, 0, 0],
     "explodeOffset": [2, -1, 0.8],
     "shape": "",
@@ -65,6 +92,15 @@
       "Detect unsafe conditions and isolate the gas supply when necessary."
     ],
     "workingPrinciple": "Conditioned gas passes through approved safety, pressure-control, and shutoff equipment before reaching the engine gas admission or injection devices. The engine control system calculates gas quantity and timing based on load, speed, and operating conditions. In a typical pilot-ignited dual-fuel engine, a small pilot-fuel injection initiates combustion of the gas-air mixture. Gas monitoring, ventilation, leak detection, and shutdown interlocks protect the installation. Gas supply pressure, admission location, and combustion sequence vary significantly by engine design.",
+    "nameVi": "Hệ thống phun khí nhiên liệu kép",
+    "overviewVi": "Hệ thống phun khí nhiên liệu kép cấp và điều khiển nhiên liệu khí khi động cơ vận hành ở chế độ khí. Nhiều động cơ tàu thủy nhiên liệu kép còn dùng một lượng nhỏ nhiên liệu lỏng mồi để đánh lửa. Cấu hình cụ thể phụ thuộc vào việc khí được cấp ở áp suất thấp hay cao.",
+    "mainFunctionsVi": [
+      "Định lượng nhiên liệu khí theo tải động cơ và lệnh điều khiển.",
+      "Cấp khí ở áp suất và thời điểm yêu cầu.",
+      "Phối hợp cấp khí với phun nhiên liệu mồi và điều khiển quá trình cháy.",
+      "Phát hiện tình trạng không an toàn và cách ly nguồn khí khi cần thiết."
+    ],
+    "workingPrincipleVi": "Khí đã được xử lý đi qua các thiết bị an toàn, điều khiển áp suất và đóng ngắt trước khi tới thiết bị cấp hoặc phun khí của động cơ. Hệ thống điều khiển tính lượng khí và thời điểm cấp theo tải, tốc độ và điều kiện vận hành. Trong động cơ nhiên liệu kép đánh lửa bằng nhiên liệu mồi, một lượng nhỏ nhiên liệu mồi khởi phát quá trình cháy hỗn hợp khí và không khí. Hệ thống giám sát khí, thông gió, phát hiện rò rỉ và liên động dừng bảo vệ thiết bị. Áp suất cấp khí, vị trí cấp và trình tự cháy thay đổi theo thiết kế động cơ.",
     "position": [0, 0, 0],
     "explodeOffset": [1.5, 1.8, -1],
     "shape": "",
@@ -83,6 +119,15 @@
       "Coordinate injection with engine speed, load, and protection systems."
     ],
     "workingPrinciple": "Conditioned fuel is supplied to the injection equipment. In a conventional mechanically controlled system, a cam-driven injection pump pressurizes fuel and sends it to an injector, which opens when the required pressure is reached. In an electronically controlled or common-rail system, the control unit commands injection timing and duration using pressurized fuel. The injected fuel atomizes into the hot compressed air and ignites. The precise sequence and components depend on the engine's injection architecture.",
+    "nameVi": "Hệ thống phun dầu nhiên liệu",
+    "overviewVi": "Hệ thống phun dầu nhiên liệu đưa nhiên liệu lỏng vào xi lanh với áp suất, lưu lượng và thời điểm được kiểm soát. Hệ thống có thể cung cấp nhiên liệu cháy chính ở chế độ diesel và nhiên liệu mồi khi vận hành nhiên liệu kép.",
+    "mainFunctionsVi": [
+      "Định lượng nhiên liệu theo tải yêu cầu của động cơ.",
+      "Phun nhiên liệu đúng thời điểm trong chu trình động cơ.",
+      "Tán sương và phân phối nhiên liệu để hỗ trợ quá trình cháy hiệu quả.",
+      "Phối hợp quá trình phun với tốc độ, tải và hệ thống bảo vệ động cơ."
+    ],
+    "workingPrincipleVi": "Nhiên liệu đã được xử lý được cấp tới thiết bị phun. Trong hệ thống điều khiển cơ khí truyền thống, bơm cao áp do cam dẫn động nén nhiên liệu và đưa tới vòi phun; vòi phun mở khi đạt áp suất yêu cầu. Trong hệ thống điều khiển điện tử hoặc common rail, bộ điều khiển ra lệnh thời điểm và thời gian phun bằng nguồn nhiên liệu có áp suất. Nhiên liệu phun tơi vào không khí nén nóng và tự cháy. Trình tự và các bộ phận cụ thể phụ thuộc vào cấu trúc hệ thống phun của động cơ.",
     "position": [0, 0, 0],
     "explodeOffset": [-1.5, 1.8, -1],
     "shape": "",
@@ -101,6 +146,15 @@
       "Coordinate starting with engine position, fuel admission, and safety interlocks."
     ],
     "workingPrinciple": "Compressed air from starting-air receivers passes through isolation and control valves. In a direct-air-start engine, a distributor or electronic controller admits air to selected cylinders in the correct firing sequence, creating torque on the pistons and rotating the crankshaft. Once adequate speed is achieved, fuel injection and combustion take over, and starting-air admission stops. In an air-motor system, compressed air instead drives a starter motor coupled to the engine. Non-return devices, relief protection, and start interlocks help prevent unsafe operation.",
+    "nameVi": "Hệ thống khí khởi động",
+    "overviewVi": "Hệ thống khí khởi động dùng khí nén tích trữ để quay động cơ đến tốc độ mà quá trình cháy nhiên liệu có thể duy trì hoạt động. Động cơ tàu thủy lớn có thể khởi động bằng khí trực tiếp; một số động cơ nhỏ hơn sử dụng mô-tơ khí.",
+    "mainFunctionsVi": [
+      "Tích trữ đủ khí nén để khởi động động cơ.",
+      "Cấp khí khởi động an toàn ở áp suất yêu cầu.",
+      "Quay trục khuỷu trong những vòng quay ban đầu.",
+      "Phối hợp quá trình khởi động với vị trí động cơ, cấp nhiên liệu và các liên động an toàn."
+    ],
+    "workingPrincipleVi": "Khí nén từ các bình khí khởi động đi qua van cách ly và van điều khiển. Với động cơ khởi động bằng khí trực tiếp, bộ chia khí hoặc bộ điều khiển điện tử cấp khí vào các xi lanh được chọn theo đúng trình tự, tạo lực lên piston và quay trục khuỷu. Khi đạt tốc độ thích hợp, quá trình phun nhiên liệu và cháy tiếp quản, còn việc cấp khí khởi động dừng lại. Với hệ thống mô-tơ khí, khí nén dẫn động mô-tơ khởi động nối với động cơ. Van một chiều, thiết bị bảo vệ quá áp và liên động khởi động giúp ngăn vận hành không an toàn.",
     "position": [0, 0, 0],
     "explodeOffset": [-1.8, 0.8, 1.2],
     "shape": "",
@@ -119,6 +173,15 @@
       "Distribute intake air to the cylinders with suitable pressure and temperature."
     ],
     "workingPrinciple": "Ambient air passes through the intake arrangement and enters the turbocharger compressor, where its pressure and temperature rise. The compressed air then flows through a charge-air cooler, reducing its temperature and increasing density. Air enters the intake manifold and is drawn or forced into each cylinder when its intake valves open. Exhaust-gas energy drives the turbocharger turbine. Engines with different charging arrangements may use additional blowers, bypasses, or control valves.",
+    "nameVi": "Hệ thống khí nạp",
+    "overviewVi": "Hệ thống khí nạp cung cấp không khí sạch cho quá trình cháy trong xi lanh. Trên động cơ tăng áp, hệ thống thường gồm bộ lọc hoặc tiêu âm khí nạp, máy nén tăng áp, bộ làm mát khí nạp và ống góp nạp.",
+    "mainFunctionsVi": [
+      "Cung cấp không khí cần thiết cho quá trình cháy nhiên liệu.",
+      "Loại bỏ hoặc giảm tạp chất trong không khí trước khi vào động cơ.",
+      "Tăng khối lượng riêng của khí nạp bằng tăng áp và làm mát khí nạp.",
+      "Phân phối khí nạp tới các xi lanh với áp suất và nhiệt độ phù hợp."
+    ],
+    "workingPrincipleVi": "Không khí môi trường đi qua hệ thống nạp và vào máy nén tăng áp, nơi áp suất và nhiệt độ tăng lên. Khí nén sau đó đi qua bộ làm mát khí nạp để giảm nhiệt độ và tăng khối lượng riêng. Không khí vào ống góp nạp rồi được hút hoặc đẩy vào từng xi lanh khi xupáp nạp mở. Năng lượng khí xả dẫn động tuabin tăng áp. Động cơ có cấu hình tăng áp khác có thể dùng thêm máy thổi, đường bypass hoặc van điều khiển.",
     "position": [0, 0, 0],
     "explodeOffset": [0, 2.2, -1.4],
     "shape": "",
@@ -137,6 +200,15 @@
       "Transfer combustion heat to the cooling system."
     ],
     "workingPrinciple": "During the engine cycle, the valve train opens and closes the intake and exhaust valves at specified crank angles. With the valves closed during compression and combustion, the cylinder head contains the high-pressure gases together with the liner and piston. Fuel is injected near the end of compression according to the engine's combustion strategy. Cooling water flowing through head passages removes heat from highly loaded regions such as valve seats and injector locations. Head fasteners transfer combustion loads into the supporting engine structure.",
+    "nameVi": "Cụm nắp xi lanh",
+    "overviewVi": "Nắp xi lanh đóng kín đầu trên của xi lanh và tạo thành một phần buồng cháy. Tùy thiết kế động cơ, cụm này chứa xupáp nạp và xả, vòi phun nhiên liệu, các đường làm mát và bộ phận dẫn động xupáp liên quan.",
+    "mainFunctionsVi": [
+      "Làm kín buồng cháy và chịu áp suất cháy.",
+      "Hỗ trợ quá trình trao đổi khí qua xupáp nạp và xả.",
+      "Định vị thiết bị phun nhiên liệu và các thiết bị liên quan đến quá trình cháy.",
+      "Truyền nhiệt do quá trình cháy tới hệ thống làm mát."
+    ],
+    "workingPrincipleVi": "Trong chu trình động cơ, cơ cấu phối khí mở và đóng xupáp nạp, xả tại các góc quay trục khuỷu xác định. Khi các xupáp đóng trong kỳ nén và cháy, nắp xi lanh cùng sơ mi và piston bao kín khí có áp suất cao. Nhiên liệu được phun gần cuối kỳ nén theo phương thức cháy của động cơ. Nước chảy qua các đường làm mát trong nắp để tản nhiệt khỏi những vùng chịu tải nhiệt cao như đế xupáp và vị trí vòi phun. Các bu lông nắp truyền tải trọng cháy vào kết cấu đỡ động cơ.",
     "position": [0, 0, 0],
     "explodeOffset": [0, 2.5, 0],
     "shape": "",
@@ -155,6 +227,15 @@
       "Provide mounting surfaces and, where designed, cooling and lubrication passages."
     ],
     "workingPrinciple": "Combustion pressure acts downward on the piston and upward on the cylinder head. The piston force travels through the connecting rod to the crankshaft and main bearings, while the opposing head force passes through head fasteners and the surrounding structure. The block, frame, and bedplate carry and balance these internal forces according to the engine design. They also transmit engine weight and dynamic reactions through the mountings to the foundation. Structural rigidity helps limit deformation and preserve alignment under changing mechanical and thermal loads.",
+    "nameVi": "Thân động cơ",
+    "overviewVi": "Thân động cơ là kết cấu cố định chính của động cơ. Tùy thiết kế, nó tích hợp hoặc nâng đỡ các xi lanh, đường làm mát, cácte và kết cấu đỡ ổ trục, đồng thời liên kết các cụm phía trên với khung hoặc bệ phía dưới.",
+    "mainFunctionsVi": [
+      "Nâng đỡ và căn chỉnh các cụm xi lanh cùng những bộ phận chính khác.",
+      "Chịu tải cơ học do quá trình cháy và các bộ phận chuyển động tạo ra.",
+      "Duy trì quan hệ hình học chính xác giữa xi lanh và trục khuỷu.",
+      "Cung cấp bề mặt lắp đặt và, tùy thiết kế, các đường làm mát và bôi trơn."
+    ],
+    "workingPrincipleVi": "Áp suất cháy tác dụng xuống piston và lên nắp xi lanh. Lực piston truyền qua thanh truyền tới trục khuỷu và các ổ đỡ chính, còn lực ngược trên nắp truyền qua bu lông nắp và kết cấu xung quanh. Thân máy, khung và bệ chịu, cân bằng các nội lực này theo thiết kế động cơ. Chúng cũng truyền trọng lượng động cơ và phản lực động qua gối đỡ xuống nền móng. Độ cứng kết cấu giúp hạn chế biến dạng và duy trì độ thẳng hàng khi tải cơ và tải nhiệt thay đổi.",
     "position": [0, 0, 0],
     "explodeOffset": [0, -1.8, 0],
     "shape": "",
@@ -173,6 +254,15 @@
       "Smooth rotational speed variations using crankshaft inertia and, where fitted, a flywheel."
     ],
     "workingPrinciple": "Combustion forces push each piston along its cylinder. The connecting rod transfers this force to an offset crankpin, producing torque that rotates the crankshaft. As the crankshaft turns, the connecting rod also drives the piston through its intake, compression, power, and exhaust strokes in a four-stroke engine. Main bearings support the crankshaft, while lubricating oil films separate loaded bearing surfaces. Counterweights and balancing arrangements reduce selected inertia forces and vibration; torsional behavior depends on the full shaft and load system.",
+    "nameVi": "Cụm chuyển động quay của động cơ",
+    "overviewVi": "Cụm chuyển động quay chủ yếu gồm trục khuỷu, thanh truyền và các bộ phận quay liên quan. Piston và chốt piston thường được nghiên cứu cùng cụm này, mặc dù piston chuyển động tịnh tiến thay vì quay liên tục.",
+    "mainFunctionsVi": [
+      "Biến chuyển động tịnh tiến của piston thành chuyển động quay của trục khuỷu.",
+      "Truyền mômen động cơ tới máy phát điện hoặc máy được dẫn động.",
+      "Chịu tải chu kỳ do quá trình cháy và quán tính thông qua các ổ đỡ và cổ trục.",
+      "Làm đều biến thiên tốc độ quay nhờ quán tính trục khuỷu và bánh đà nếu được trang bị."
+    ],
+    "workingPrincipleVi": "Lực cháy đẩy từng piston dọc theo xi lanh. Thanh truyền truyền lực này tới chốt khuỷu lệch tâm, tạo mômen làm quay trục khuỷu. Khi trục khuỷu quay, thanh truyền cũng dẫn động piston qua các kỳ nạp, nén, sinh công và xả của động cơ bốn kỳ. Ổ đỡ chính nâng đỡ trục khuỷu, còn màng dầu bôi trơn ngăn cách các bề mặt ổ chịu tải. Đối trọng và cơ cấu cân bằng làm giảm một số lực quán tính và rung động; đặc tính dao động xoắn phụ thuộc vào toàn bộ hệ trục và tải.",
     "position": [0, 0, 0],
     "explodeOffset": [0, -1, 1.8],
     "shape": "",

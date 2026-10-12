@@ -289,7 +289,7 @@ The bearing supports the camshaft journal as it rotates. In a plain-bearing arra
 
 **Overview**
 
-The connecting rod identified as item 1 in the model, linking its associated piston to a crankshaft crankpin.
+A connecting rod linking the piston to a crankshaft crankpin.
 
 **Main Functions**
 
@@ -299,119 +299,119 @@ The connecting rod identified as item 1 in the model, linking its associated pis
 
 **Working Principle**
 
-The small end pivots at the piston pin and the big end rotates around a crankpin. During the power stroke, piston force creates crankshaft torque. During other strokes, crankshaft rotation moves the piston through the rod. The model number does not establish cylinder numbering or firing order.
+The small end pivots at the piston pin and the big end rotates around a crankpin. During the power stroke, piston force creates crankshaft torque. During other strokes, crankshaft rotation moves the piston through the rod.
 
 ### 3.6 Connecting rod 2
 
 **Overview**
 
-The connecting rod identified as item 2, joining its associated piston and crankpin.
+A connecting rod linking the piston to a crankshaft crankpin.
 
 **Main Functions**
 
-- Transmits force between piston and crankshaft.
-- Supports the conversion between reciprocating and rotating motion.
-- Carries combustion and inertia loads for its associated piston.
+- Transfers piston force to the crankshaft.
+- Links reciprocating piston motion with crankshaft rotation.
+- Carries alternating combustion and inertia loads.
 
 **Working Principle**
 
-The rod oscillates as its piston moves along the cylinder and its crankpin follows a circular path. Pivoting connections at both ends accommodate this movement. Its principle is the same as connecting rod 1; its position and operating phase depend on the actual cylinder arrangement.
+The small end pivots at the piston pin and the big end rotates around a crankpin. During the power stroke, piston force creates crankshaft torque. During other strokes, crankshaft rotation moves the piston through the rod.
 
 ### 3.7 Connecting rod 3
 
 **Overview**
 
-The connecting rod identified as item 3 in the rotating assembly.
+A connecting rod linking the piston to a crankshaft crankpin.
 
 **Main Functions**
 
-- Connects its piston to the crankshaft.
-- Transfers power-stroke force to a crankpin.
-- Transmits the forces needed to move the piston during the remaining strokes.
+- Transfers piston force to the crankshaft.
+- Links reciprocating piston motion with crankshaft rotation.
+- Carries alternating combustion and inertia loads.
 
 **Working Principle**
 
-The piston pin and crankpin connections allow the rod to change angle throughout crankshaft rotation. Gas pressure and piston acceleration create changing axial loads in the rod. Its model label should be mapped to the correct cylinder using the engine drawing.
+The small end pivots at the piston pin and the big end rotates around a crankpin. During the power stroke, piston force creates crankshaft torque. During other strokes, crankshaft rotation moves the piston through the rod.
 
 ### 3.8 Connecting rod 4
 
 **Overview**
 
-The connecting rod identified as item 4, forming a mechanical link between its piston and crankshaft.
+A connecting rod linking the piston to a crankshaft crankpin.
 
 **Main Functions**
 
-- Transfers piston forces to the crankshaft.
-- Coordinates piston movement with crankpin rotation.
-- Carries changing compression and tension loads during operation.
+- Transfers piston force to the crankshaft.
+- Links reciprocating piston motion with crankshaft rotation.
+- Carries alternating combustion and inertia loads.
 
 **Working Principle**
 
-The crankpin travels around the crankshaft axis while the piston remains constrained by the cylinder. The rod's changing angle connects these motions. Lubricated bearing interfaces allow relative movement while transmitting load.
+The small end pivots at the piston pin and the big end rotates around a crankpin. During the power stroke, piston force creates crankshaft torque. During other strokes, crankshaft rotation moves the piston through the rod.
 
 ### 3.9 Connecting rod 5
 
 **Overview**
 
-The connecting rod identified as item 5 in the model.
+A connecting rod linking the piston to a crankshaft crankpin.
 
 **Main Functions**
 
-- Connects the associated piston and crankpin.
-- Transfers combustion energy into the crankshaft mechanism.
-- Carries reciprocating inertia loads.
+- Transfers piston force to the crankshaft.
+- Links reciprocating piston motion with crankshaft rotation.
+- Carries alternating combustion and inertia loads.
 
 **Working Principle**
 
-Piston force passes through the piston pin, rod and big-end bearing to the crankpin. Crank geometry converts part of that force into shaft torque. At other points in the cycle, the crankshaft drives the piston through the same linkage.
+The small end pivots at the piston pin and the big end rotates around a crankpin. During the power stroke, piston force creates crankshaft torque. During other strokes, crankshaft rotation moves the piston through the rod.
 
 ### 3.10 Connecting rod 6
 
 **Overview**
 
-The connecting rod identified as item 6, associated with one piston-crank mechanism.
+A connecting rod linking the piston to a crankshaft crankpin.
 
 **Main Functions**
 
-- Transmits load between piston and crankshaft.
-- Converts motion through the piston-and-crank linkage.
-- Supports repeated changes in loading throughout the engine cycle.
+- Transfers piston force to the crankshaft.
+- Links reciprocating piston motion with crankshaft rotation.
+- Carries alternating combustion and inertia loads.
 
 **Working Principle**
 
-The rod pivots at its small end and follows the crankpin at its big end. This permits the piston to reciprocate while the shaft rotates. The same mechanical principle applies to all the numbered rods; their relative phases follow the engine's crank arrangement.
+The small end pivots at the piston pin and the big end rotates around a crankpin. During the power stroke, piston force creates crankshaft torque. During other strokes, crankshaft rotation moves the piston through the rod.
 
 ### 3.11 Connecting rod 7
 
 **Overview**
 
-The connecting rod identified as item 7 in the rotating assembly.
+A connecting rod linking the piston to a crankshaft crankpin.
 
 **Main Functions**
 
-- Links its piston to the crankshaft.
-- Carries power-stroke and inertia forces.
-- Transfers motion in both directions through the linkage.
+- Transfers piston force to the crankshaft.
+- Links reciprocating piston motion with crankshaft rotation.
+- Carries alternating combustion and inertia loads.
 
 **Working Principle**
 
-During combustion, the rod transfers piston load to the rotating crankpin. During intake, compression and exhaust, crankshaft energy helps move the piston through the rod. The bearing connections allow the necessary relative movement without fixing the rod rigidly to either pin.
+The small end pivots at the piston pin and the big end rotates around a crankpin. During the power stroke, piston force creates crankshaft torque. During other strokes, crankshaft rotation moves the piston through the rod.
 
 ### 3.12 Connecting rod 8
 
 **Overview**
 
-The connecting rod identified as item 8 in the model.
+A connecting rod linking the piston to a crankshaft crankpin.
 
 **Main Functions**
 
-- Connects the associated piston and crankpin.
-- Transfers load into and out of the crankshaft mechanism.
-- Accommodates the changing angle between piston motion and crank rotation.
+- Transfers piston force to the crankshaft.
+- Links reciprocating piston motion with crankshaft rotation.
+- Carries alternating combustion and inertia loads.
 
 **Working Principle**
 
-As the crankshaft turns, the rod alternately pushes and pulls its piston according to the forces acting during the cycle. Its operating principle matches the other rods. Confirm that the numbered meshes represent separate rods before treating the labels as eight distinct cylinders.
+The small end pivots at the piston pin and the big end rotates around a crankpin. During the power stroke, piston force creates crankshaft torque. During other strokes, crankshaft rotation moves the piston through the rod.
 
 ### 3.13 Crank shaft
 
@@ -497,7 +497,7 @@ In a typical plain main bearing, oil is supplied between the journal and bearing
 
 **Overview**
 
-The piston identified as item 1 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
+A reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
 
 **Main Functions**
 
@@ -508,13 +508,13 @@ The piston identified as item 1 in the model: a reciprocating component moving i
 
 **Working Principle**
 
-In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label “Piston 1” identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.
+In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design.
 
 ### 3.19 Piston 2
 
 **Overview**
 
-The piston identified as item 2 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
+A reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
 
 **Main Functions**
 
@@ -525,13 +525,13 @@ The piston identified as item 2 in the model: a reciprocating component moving i
 
 **Working Principle**
 
-In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label “Piston 2” identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.
+In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design.
 
 ### 3.20 Piston 3
 
 **Overview**
 
-The piston identified as item 3 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
+A reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
 
 **Main Functions**
 
@@ -542,13 +542,13 @@ The piston identified as item 3 in the model: a reciprocating component moving i
 
 **Working Principle**
 
-In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label “Piston 3” identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.
+In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design.
 
 ### 3.21 Piston 4
 
 **Overview**
 
-The piston identified as item 4 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
+A reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
 
 **Main Functions**
 
@@ -559,13 +559,13 @@ The piston identified as item 4 in the model: a reciprocating component moving i
 
 **Working Principle**
 
-In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label “Piston 4” identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.
+In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design.
 
 ### 3.22 Piston 5
 
 **Overview**
 
-The piston identified as item 5 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
+A reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
 
 **Main Functions**
 
@@ -576,13 +576,13 @@ The piston identified as item 5 in the model: a reciprocating component moving i
 
 **Working Principle**
 
-In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label “Piston 5” identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.
+In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design.
 
 ### 3.23 Piston 6
 
 **Overview**
 
-The piston identified as item 6 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
+A reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
 
 **Main Functions**
 
@@ -593,13 +593,13 @@ The piston identified as item 6 in the model: a reciprocating component moving i
 
 **Working Principle**
 
-In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label “Piston 6” identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.
+In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design.
 
 ### 3.24 Piston 7
 
 **Overview**
 
-The piston identified as item 7 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
+A reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
 
 **Main Functions**
 
@@ -610,13 +610,13 @@ The piston identified as item 7 in the model: a reciprocating component moving i
 
 **Working Principle**
 
-In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label “Piston 7” identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.
+In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design.
 
 ### 3.25 Piston 8
 
 **Overview**
 
-The piston identified as item 8 in the model: a reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
+A reciprocating component moving inside its associated cylinder liner and connected to the crankshaft through a piston pin and connecting rod.
 
 **Main Functions**
 
@@ -627,7 +627,7 @@ The piston identified as item 8 in the model: a reciprocating component moving i
 
 **Working Principle**
 
-In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design. The label “Piston 8” identifies this model part; its cylinder number and phase in the firing sequence must follow the engine drawing.
+In the four-stroke cycle, the piston moves down during intake, up to compress the charge, down under combustion pressure during the power stroke, and up to expel exhaust gas. These four strokes occur over two crankshaft revolutions. The connecting rod links piston movement to crankshaft rotation, while the piston rings seal against the liner and manage oil on its surface. Any internal oil cooling depends on the engine design.
 
 ---
 

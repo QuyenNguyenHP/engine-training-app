@@ -26,7 +26,15 @@
       1,
       1
     ],
-    "color": "#7895ae"
+    "color": "#7895ae",
+    "nameVi": "Bánh răng dẫn động phụ",
+    "overviewVi": "Bánh răng truyền chuyển động từ hệ bánh răng động cơ tới cơ cấu phụ.",
+    "mainFunctionsVi": [
+      "Truyền mô-men",
+      "tạo tỷ số truyền",
+      "đồng bộ chuyển động cơ cấu được dẫn động."
+    ],
+    "workingPrincipleVi": "Các răng ăn khớp truyền lực và tốc độ; cần bản vẽ để xác định thiết bị phụ được dẫn động."
   },
   {
     "id": "balance-weight",
@@ -55,7 +63,15 @@
       1,
       1
     ],
-    "color": "#6e8fa9"
+    "color": "#6e8fa9",
+    "nameVi": "Đối trọng cân bằng",
+    "overviewVi": "Khối lượng lắp trên bộ phận quay, thường là trục khuỷu, nhằm giảm mất cân bằng.",
+    "mainFunctionsVi": [
+      "Cân bằng khối lượng quay",
+      "giảm một phần tải quán tính lên ổ đỡ",
+      "hạn chế rung."
+    ],
+    "workingPrincipleVi": "Khi quay, đối trọng tạo lực ly tâm bù cho các lực mất cân bằng đã tính toán; không triệt tiêu mọi dạng rung động."
   },
   {
     "id": "cam-shaft",
@@ -84,7 +100,15 @@
       1,
       1
     ],
-    "color": "#bd9263"
+    "color": "#bd9263",
+    "nameVi": "Trục cam",
+    "overviewVi": "Trục mang các vấu cam để điều khiển thời điểm mở van.",
+    "mainFunctionsVi": [
+      "Quy định thời điểm và độ nâng van",
+      "phối hợp với vị trí piston",
+      "dẫn động cơ cấu định thời khác nếu có."
+    ],
+    "workingPrincipleVi": "Ở động cơ bốn kỳ, trục cam quay một vòng trong hai vòng trục khuỷu. Vấu cam đẩy con đội để mở van theo biên dạng thiết kế."
   },
   {
     "id": "cam-shaft-bearing",
@@ -113,7 +137,15 @@
       1,
       1
     ],
-    "color": "#88a5ad"
+    "color": "#88a5ad",
+    "nameVi": "Ổ đỡ trục cam",
+    "overviewVi": "Ổ đỡ định vị và nâng đỡ trục cam.",
+    "mainFunctionsVi": [
+      "Giữ thẳng hàng trục cam",
+      "chịu tải cơ cấu van",
+      "giảm ma sát quay."
+    ],
+    "workingPrincipleVi": "Cổ trục quay trên ổ đỡ; với ổ trượt, màng dầu bôi trơn ngăn tiếp xúc kim loại trực tiếp khi hoạt động bình thường."
   },
   {
     "id": "connecting-rod-1",
@@ -142,7 +174,15 @@
       1,
       1
     ],
-    "color": "#76a7a0"
+    "color": "#76a7a0",
+    "nameVi": "Thanh truyền 1",
+    "overviewVi": "Chi tiết nối piston với chốt khuỷu của trục khuỷu.",
+    "mainFunctionsVi": [
+      "Truyền lực từ piston",
+      "liên kết chuyển động tịnh tiến và chuyển động quay",
+      "chịu tải cháy và quán tính."
+    ],
+    "workingPrincipleVi": "Đầu nhỏ quay quanh chốt piston, đầu to quay quanh chốt khuỷu. Lực từ piston tạo mô-men trên trục khuỷu và trục khuỷu cũng dẫn động piston ở các kỳ khác."
   },
   {
     "id": "connecting-rod-2",
@@ -171,7 +211,15 @@
       1,
       1
     ],
-    "color": "#76a7a0"
+    "color": "#76a7a0",
+    "nameVi": "Thanh truyền 2",
+    "overviewVi": "Chi tiết nối piston với chốt khuỷu của trục khuỷu.",
+    "mainFunctionsVi": [
+      "Truyền lực từ piston",
+      "liên kết chuyển động tịnh tiến và chuyển động quay",
+      "chịu tải cháy và quán tính."
+    ],
+    "workingPrincipleVi": "Đầu nhỏ quay quanh chốt piston, đầu to quay quanh chốt khuỷu. Lực từ piston tạo mô-men trên trục khuỷu và trục khuỷu cũng dẫn động piston ở các kỳ khác."
   },
   {
     "id": "connecting-rod-3",
@@ -200,7 +248,15 @@
       1,
       1
     ],
-    "color": "#76a7a0"
+    "color": "#76a7a0",
+    "nameVi": "Thanh truyền 3",
+    "overviewVi": "Chi tiết nối piston với chốt khuỷu của trục khuỷu.",
+    "mainFunctionsVi": [
+      "Truyền lực từ piston",
+      "liên kết chuyển động tịnh tiến và chuyển động quay",
+      "chịu tải cháy và quán tính."
+    ],
+    "workingPrincipleVi": "Đầu nhỏ quay quanh chốt piston, đầu to quay quanh chốt khuỷu. Lực từ piston tạo mô-men trên trục khuỷu và trục khuỷu cũng dẫn động piston ở các kỳ khác."
   },
   {
     "id": "connecting-rod-4",
@@ -229,7 +285,15 @@
       1,
       1
     ],
-    "color": "#76a7a0"
+    "color": "#76a7a0",
+    "nameVi": "Thanh truyền 4",
+    "overviewVi": "Chi tiết nối piston với chốt khuỷu của trục khuỷu.",
+    "mainFunctionsVi": [
+      "Truyền lực từ piston",
+      "liên kết chuyển động tịnh tiến và chuyển động quay",
+      "chịu tải cháy và quán tính."
+    ],
+    "workingPrincipleVi": "Đầu nhỏ quay quanh chốt piston, đầu to quay quanh chốt khuỷu. Lực từ piston tạo mô-men trên trục khuỷu và trục khuỷu cũng dẫn động piston ở các kỳ khác."
   },
   {
     "id": "connecting-rod-5",
@@ -258,7 +322,15 @@
       1,
       1
     ],
-    "color": "#76a7a0"
+    "color": "#76a7a0",
+    "nameVi": "Thanh truyền 5",
+    "overviewVi": "Chi tiết nối piston với chốt khuỷu của trục khuỷu.",
+    "mainFunctionsVi": [
+      "Truyền lực từ piston",
+      "liên kết chuyển động tịnh tiến và chuyển động quay",
+      "chịu tải cháy và quán tính."
+    ],
+    "workingPrincipleVi": "Đầu nhỏ quay quanh chốt piston, đầu to quay quanh chốt khuỷu. Lực từ piston tạo mô-men trên trục khuỷu và trục khuỷu cũng dẫn động piston ở các kỳ khác."
   },
   {
     "id": "connecting-rod-6",
@@ -287,7 +359,15 @@
       1,
       1
     ],
-    "color": "#76a7a0"
+    "color": "#76a7a0",
+    "nameVi": "Thanh truyền 6",
+    "overviewVi": "Chi tiết nối piston với chốt khuỷu của trục khuỷu.",
+    "mainFunctionsVi": [
+      "Truyền lực từ piston",
+      "liên kết chuyển động tịnh tiến và chuyển động quay",
+      "chịu tải cháy và quán tính."
+    ],
+    "workingPrincipleVi": "Đầu nhỏ quay quanh chốt piston, đầu to quay quanh chốt khuỷu. Lực từ piston tạo mô-men trên trục khuỷu và trục khuỷu cũng dẫn động piston ở các kỳ khác."
   },
   {
     "id": "connecting-rod-7",
@@ -316,7 +396,15 @@
       1,
       1
     ],
-    "color": "#76a7a0"
+    "color": "#76a7a0",
+    "nameVi": "Thanh truyền 7",
+    "overviewVi": "Chi tiết nối piston với chốt khuỷu của trục khuỷu.",
+    "mainFunctionsVi": [
+      "Truyền lực từ piston",
+      "liên kết chuyển động tịnh tiến và chuyển động quay",
+      "chịu tải cháy và quán tính."
+    ],
+    "workingPrincipleVi": "Đầu nhỏ quay quanh chốt piston, đầu to quay quanh chốt khuỷu. Lực từ piston tạo mô-men trên trục khuỷu và trục khuỷu cũng dẫn động piston ở các kỳ khác."
   },
   {
     "id": "connecting-rod-8",
@@ -345,7 +433,15 @@
       1,
       1
     ],
-    "color": "#76a7a0"
+    "color": "#76a7a0",
+    "nameVi": "Thanh truyền 8",
+    "overviewVi": "Chi tiết nối piston với chốt khuỷu của trục khuỷu.",
+    "mainFunctionsVi": [
+      "Truyền lực từ piston",
+      "liên kết chuyển động tịnh tiến và chuyển động quay",
+      "chịu tải cháy và quán tính."
+    ],
+    "workingPrincipleVi": "Đầu nhỏ quay quanh chốt piston, đầu to quay quanh chốt khuỷu. Lực từ piston tạo mô-men trên trục khuỷu và trục khuỷu cũng dẫn động piston ở các kỳ khác."
   },
   {
     "id": "crank-shaft",
@@ -374,7 +470,15 @@
       1,
       1
     ],
-    "color": "#6e8fa9"
+    "color": "#6e8fa9",
+    "nameVi": "Trục khuỷu",
+    "overviewVi": "Trục quay chính nhận lực từ các thanh truyền và cung cấp công suất cơ.",
+    "mainFunctionsVi": [
+      "Biến lực piston thành mô-men",
+      "truyền công suất tới máy phát",
+      "dẫn động hệ cam và thiết bị phụ nếu có."
+    ],
+    "workingPrincipleVi": "Thanh truyền tác dụng lực lên chốt khuỷu lệch tâm, tạo mô-men quay. Ổ đỡ chính truyền tải xuống thân máy; trục chịu uốn và xoắn."
   },
   {
     "id": "flexible-coupling",
@@ -403,7 +507,15 @@
       1,
       1
     ],
-    "color": "#be9a62"
+    "color": "#be9a62",
+    "nameVi": "Khớp nối mềm",
+    "overviewVi": "Bộ phận truyền mô-men giữa trục động cơ và trục máy được dẫn động.",
+    "mainFunctionsVi": [
+      "Truyền mô-men",
+      "cho phép sai lệch nhỏ trong giới hạn",
+      "thay đổi đặc tính dao động xoắn."
+    ],
+    "workingPrincipleVi": "Phần tử đàn hồi biến dạng khi truyền mô-men. Mức giảm chấn tùy kết cấu, không phải khớp mềm nào cũng giảm rung đáng kể."
   },
   {
     "id": "front-end-damper",
@@ -432,7 +544,15 @@
       1,
       1
     ],
-    "color": "#8b7b9d"
+    "color": "#8b7b9d",
+    "nameVi": "Bộ giảm dao động đầu trục",
+    "overviewVi": "Thiết bị lắp ở đầu trục khuỷu để hạn chế dao động xoắn.",
+    "mainFunctionsVi": [
+      "Giảm dao động xoắn",
+      "giảm ứng suất chu kỳ",
+      "bảo vệ trục và cơ cấu dẫn động."
+    ],
+    "workingPrincipleVi": "Khối quán tính chuyển động tương đối với phần gắn trục; cơ cấu nhớt hoặc giảm chấn khác tiêu tán năng lượng dao động."
   },
   {
     "id": "idle-gear",
@@ -461,7 +581,15 @@
       1,
       1
     ],
-    "color": "#ba8f61"
+    "color": "#ba8f61",
+    "nameVi": "Bánh răng trung gian",
+    "overviewVi": "Bánh răng nằm giữa các bánh răng trong hệ truyền động.",
+    "mainFunctionsVi": [
+      "Truyền chuyển động và mô-men",
+      "nối khoảng cách giữa các trục",
+      "thay đổi chiều quay theo số cặp ăn khớp."
+    ],
+    "workingPrincipleVi": "Bánh dẫn động quay bánh trung gian, rồi truyền sang bánh kế tiếp. Bánh trung gian đơn không làm thay đổi độ lớn tỷ số truyền tổng thể."
   },
   {
     "id": "main-bearing",
@@ -490,7 +618,15 @@
       1,
       1
     ],
-    "color": "#809aa4"
+    "color": "#809aa4",
+    "nameVi": "Ổ đỡ chính trục khuỷu",
+    "overviewVi": "Ổ đỡ nâng đỡ cổ trục chính của trục khuỷu, khác ổ đầu to thanh truyền.",
+    "mainFunctionsVi": [
+      "Đỡ và định tâm trục khuỷu",
+      "truyền tải trọng vào thân máy",
+      "giảm ma sát quay."
+    ],
+    "workingPrincipleVi": "Dầu được cấp vào khe hở giữa cổ trục và bạc. Khi quay, màng dầu thủy động hình thành để chịu tải và tản nhiệt; ổ chặn dọc trục có thể là bộ phận riêng."
   },
   {
     "id": "piston-1",
@@ -520,7 +656,16 @@
       1,
       1
     ],
-    "color": "#cfb06a"
+    "color": "#cfb06a",
+    "nameVi": "Piston 1",
+    "overviewVi": "Chi tiết chuyển động tịnh tiến trong sơ mi xi lanh, nối với thanh truyền qua chốt piston.",
+    "mainFunctionsVi": [
+      "Nhận áp suất cháy",
+      "thay đổi thể tích xi lanh trong bốn kỳ",
+      "cùng xéc-măng làm kín và kiểm soát dầu",
+      "truyền nhiệt."
+    ],
+    "workingPrincipleVi": "Trong chu trình bốn kỳ, piston đi xuống ở kỳ nạp, đi lên ở kỳ nén, đi xuống ở kỳ sinh công và đi lên ở kỳ xả. Bốn hành trình tương ứng hai vòng trục khuỷu."
   },
   {
     "id": "piston-2",
@@ -550,7 +695,16 @@
       1,
       1
     ],
-    "color": "#cfb06a"
+    "color": "#cfb06a",
+    "nameVi": "Piston 2",
+    "overviewVi": "Chi tiết chuyển động tịnh tiến trong sơ mi xi lanh, nối với thanh truyền qua chốt piston.",
+    "mainFunctionsVi": [
+      "Nhận áp suất cháy",
+      "thay đổi thể tích xi lanh trong bốn kỳ",
+      "cùng xéc-măng làm kín và kiểm soát dầu",
+      "truyền nhiệt."
+    ],
+    "workingPrincipleVi": "Trong chu trình bốn kỳ, piston đi xuống ở kỳ nạp, đi lên ở kỳ nén, đi xuống ở kỳ sinh công và đi lên ở kỳ xả. Bốn hành trình tương ứng hai vòng trục khuỷu."
   },
   {
     "id": "piston-3",
@@ -580,7 +734,16 @@
       1,
       1
     ],
-    "color": "#cfb06a"
+    "color": "#cfb06a",
+    "nameVi": "Piston 3",
+    "overviewVi": "Chi tiết chuyển động tịnh tiến trong sơ mi xi lanh, nối với thanh truyền qua chốt piston.",
+    "mainFunctionsVi": [
+      "Nhận áp suất cháy",
+      "thay đổi thể tích xi lanh trong bốn kỳ",
+      "cùng xéc-măng làm kín và kiểm soát dầu",
+      "truyền nhiệt."
+    ],
+    "workingPrincipleVi": "Trong chu trình bốn kỳ, piston đi xuống ở kỳ nạp, đi lên ở kỳ nén, đi xuống ở kỳ sinh công và đi lên ở kỳ xả. Bốn hành trình tương ứng hai vòng trục khuỷu."
   },
   {
     "id": "piston-4",
@@ -610,7 +773,16 @@
       1,
       1
     ],
-    "color": "#cfb06a"
+    "color": "#cfb06a",
+    "nameVi": "Piston 4",
+    "overviewVi": "Chi tiết chuyển động tịnh tiến trong sơ mi xi lanh, nối với thanh truyền qua chốt piston.",
+    "mainFunctionsVi": [
+      "Nhận áp suất cháy",
+      "thay đổi thể tích xi lanh trong bốn kỳ",
+      "cùng xéc-măng làm kín và kiểm soát dầu",
+      "truyền nhiệt."
+    ],
+    "workingPrincipleVi": "Trong chu trình bốn kỳ, piston đi xuống ở kỳ nạp, đi lên ở kỳ nén, đi xuống ở kỳ sinh công và đi lên ở kỳ xả. Bốn hành trình tương ứng hai vòng trục khuỷu."
   },
   {
     "id": "piston-5",
@@ -640,7 +812,16 @@
       1,
       1
     ],
-    "color": "#cfb06a"
+    "color": "#cfb06a",
+    "nameVi": "Piston 5",
+    "overviewVi": "Chi tiết chuyển động tịnh tiến trong sơ mi xi lanh, nối với thanh truyền qua chốt piston.",
+    "mainFunctionsVi": [
+      "Nhận áp suất cháy",
+      "thay đổi thể tích xi lanh trong bốn kỳ",
+      "cùng xéc-măng làm kín và kiểm soát dầu",
+      "truyền nhiệt."
+    ],
+    "workingPrincipleVi": "Trong chu trình bốn kỳ, piston đi xuống ở kỳ nạp, đi lên ở kỳ nén, đi xuống ở kỳ sinh công và đi lên ở kỳ xả. Bốn hành trình tương ứng hai vòng trục khuỷu."
   },
   {
     "id": "piston-6",
@@ -670,7 +851,16 @@
       1,
       1
     ],
-    "color": "#cfb06a"
+    "color": "#cfb06a",
+    "nameVi": "Piston 6",
+    "overviewVi": "Chi tiết chuyển động tịnh tiến trong sơ mi xi lanh, nối với thanh truyền qua chốt piston.",
+    "mainFunctionsVi": [
+      "Nhận áp suất cháy",
+      "thay đổi thể tích xi lanh trong bốn kỳ",
+      "cùng xéc-măng làm kín và kiểm soát dầu",
+      "truyền nhiệt."
+    ],
+    "workingPrincipleVi": "Trong chu trình bốn kỳ, piston đi xuống ở kỳ nạp, đi lên ở kỳ nén, đi xuống ở kỳ sinh công và đi lên ở kỳ xả. Bốn hành trình tương ứng hai vòng trục khuỷu."
   },
   {
     "id": "piston-7",
@@ -700,7 +890,16 @@
       1,
       1
     ],
-    "color": "#cfb06a"
+    "color": "#cfb06a",
+    "nameVi": "Piston 7",
+    "overviewVi": "Chi tiết chuyển động tịnh tiến trong sơ mi xi lanh, nối với thanh truyền qua chốt piston.",
+    "mainFunctionsVi": [
+      "Nhận áp suất cháy",
+      "thay đổi thể tích xi lanh trong bốn kỳ",
+      "cùng xéc-măng làm kín và kiểm soát dầu",
+      "truyền nhiệt."
+    ],
+    "workingPrincipleVi": "Trong chu trình bốn kỳ, piston đi xuống ở kỳ nạp, đi lên ở kỳ nén, đi xuống ở kỳ sinh công và đi lên ở kỳ xả. Bốn hành trình tương ứng hai vòng trục khuỷu."
   },
   {
     "id": "piston-8",
@@ -730,6 +929,15 @@
       1,
       1
     ],
-    "color": "#cfb06a"
+    "color": "#cfb06a",
+    "nameVi": "Piston 8",
+    "overviewVi": "Chi tiết chuyển động tịnh tiến trong sơ mi xi lanh, nối với thanh truyền qua chốt piston.",
+    "mainFunctionsVi": [
+      "Nhận áp suất cháy",
+      "thay đổi thể tích xi lanh trong bốn kỳ",
+      "cùng xéc-măng làm kín và kiểm soát dầu",
+      "truyền nhiệt."
+    ],
+    "workingPrincipleVi": "Trong chu trình bốn kỳ, piston đi xuống ở kỳ nạp, đi lên ở kỳ nén, đi xuống ở kỳ sinh công và đi lên ở kỳ xả. Bốn hành trình tương ứng hai vòng trục khuỷu."
   }
 ]

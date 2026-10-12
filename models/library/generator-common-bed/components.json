@@ -26,7 +26,15 @@
       1,
       1
     ],
-    "color": "#7895ae"
+    "color": "#7895ae",
+    "nameVi": "Bệ chung động cơ – máy phát",
+    "overviewVi": "Kết cấu bệ đỡ chung cho động cơ và máy phát.",
+    "mainFunctionsVi": [
+      "Chịu trọng lượng",
+      "giữ tương quan căn chỉnh",
+      "truyền tải xuống nền móng tàu."
+    ],
+    "workingPrincipleVi": "Động cơ và máy phát được bắt trên bệ; độ cứng bệ hạn chế chuyển vị tương đối và truyền tải qua gối đỡ xuống kết cấu tàu."
   },
   {
     "id": "cover-flywheel",
@@ -55,7 +63,15 @@
       1,
       1
     ],
-    "color": "#6e8fa9"
+    "color": "#6e8fa9",
+    "nameVi": "Vỏ che bánh đà",
+    "overviewVi": "Vỏ cố định bảo vệ khu vực bánh đà.",
+    "mainFunctionsVi": [
+      "Ngăn tiếp xúc với phần quay",
+      "hạn chế vật lạ lọt vào",
+      "tạo cửa kiểm tra nếu có."
+    ],
+    "workingPrincipleVi": "Bánh đà quay phía trong vỏ trong khi vỏ đứng yên. Vỏ không tích trữ động năng quay; đó là chức năng bánh đà."
   },
   {
     "id": "generator",
@@ -84,7 +100,15 @@
       1,
       1
     ],
-    "color": "#76a7a0"
+    "color": "#76a7a0",
+    "nameVi": "Máy phát điện",
+    "overviewVi": "Máy điện biến cơ năng từ động cơ thành điện năng, thường là máy phát đồng bộ.",
+    "mainFunctionsVi": [
+      "Biến công suất trục thành điện",
+      "cấp nguồn hệ thống",
+      "phối hợp bộ kích từ điều chỉnh điện áp."
+    ],
+    "workingPrincipleVi": "Động cơ kéo rô-to quay tạo từ trường biến thiên tương đối với dây quấn stato, cảm ứng điện áp xoay chiều. Tần số phụ thuộc tốc độ và số cực."
   },
   {
     "id": "level-switch",
@@ -113,7 +137,15 @@
       1,
       1
     ],
-    "color": "#bd9263"
+    "color": "#bd9263",
+    "nameVi": "Công tắc mức",
+    "overviewVi": "Thiết bị phát tín hiệu khi chất lỏng đạt mức xác định.",
+    "mainFunctionsVi": [
+      "Phát hiện mức cao/thấp",
+      "đưa tín hiệu số về bộ điều khiển",
+      "hỗ trợ cảnh báo hoặc liên động."
+    ],
+    "workingPrincipleVi": "Phao hoặc cảm biến khác đổi trạng thái khi chất lỏng qua ngưỡng. Cần xác nhận loại chất lỏng và tác động điều khiển thực tế."
   },
   {
     "id": "lo-priming-pump",
@@ -142,7 +174,15 @@
       1,
       1
     ],
-    "color": "#8b7b9d"
+    "color": "#8b7b9d",
+    "nameVi": "Bơm mồi dầu bôi trơn",
+    "overviewVi": "Bơm phụ tạo dòng dầu bôi trơn trước khi động cơ khởi động.",
+    "mainFunctionsVi": [
+      "Bôi trơn trước khởi động",
+      "cấp dầu tới ổ đỡ và đường dầu",
+      "có thể bôi trơn sau dừng nếu được thiết kế."
+    ],
+    "workingPrincipleVi": "Bơm tuần hoàn dầu trước khi đề máy; cảm biến áp suất có thể xác nhận điều kiện cho phép khởi động. Logic vận hành phải đối chiếu tài liệu."
   },
   {
     "id": "turning-device",
@@ -171,6 +211,14 @@
       1,
       1
     ],
-    "color": "#ba8f61"
+    "color": "#ba8f61",
+    "nameVi": "Thiết bị quay trục chậm",
+    "overviewVi": "Cơ cấu quay động cơ ở tốc độ thấp để kiểm tra hoặc bảo dưỡng.",
+    "mainFunctionsVi": [
+      "Định vị trục khuỷu/piston",
+      "quay chậm có kiểm soát",
+      "cung cấp tín hiệu liên động khởi động nếu có."
+    ],
+    "workingPrincipleVi": "Bộ truyền giảm tốc bằng tay hoặc mô-tơ ăn khớp với vành răng bánh đà để quay trục mà không đốt nhiên liệu; cần khóa khởi động khi thiết bị đang gài."
   }
 ]
