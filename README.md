@@ -125,6 +125,17 @@ docker compose up --build -d
 docker compose ps
 ```
 
+All services use `restart: unless-stopped` to restart after Docker starts,
+including after a host reboot. Containers stopped manually stay stopped;
+`docker compose down` removes them. Run `docker compose up -d` to apply this
+policy to an existing deployment or recreate removed containers. If using
+MinIO, run `docker compose --profile assets up -d` instead.
+
+Docker itself must also start with the operating system. On a Linux server
+using systemd, enable it with `sudo systemctl enable --now docker containerd`.
+On Windows with Docker Desktop, enable **Start Docker Desktop when you sign
+in to your computer** in its settings (this starts Docker after sign-in).
+
 Open:
 
 - Application: http://localhost:9900

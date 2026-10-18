@@ -1,10 +1,12 @@
 services:
   frontend:
     build: ./frontend
+    restart: unless-stopped
     ports: ["127.0.0.1:9900:80"]
     depends_on: [backend]
   backend:
     build: ./backend
+    restart: unless-stopped
     volumes:
       - ./models:/app/models:ro
     environment:
@@ -16,6 +18,7 @@ services:
       AWS_SECRET_ACCESS_KEY: engine_local_password
   storage:
     profiles: [assets]
+    restart: unless-stopped
     image: quay.io/minio/minio:RELEASE.2025-04-22T22-12-26Z
     command: server /data --console-address :9001
     environment:
